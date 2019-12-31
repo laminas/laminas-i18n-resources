@@ -14,7 +14,6 @@ script:
  - ant travis -keep-going
 
 notifications:
-  irc: "irc.freenode.org#zftalk.dev"
   email: false
 
 matrix:
