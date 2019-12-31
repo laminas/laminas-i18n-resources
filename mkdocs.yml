@@ -1,9 +1,8 @@
 docs_dir: docs/book
 site_dir: docs/html
-pages:
+nav:
     - index.md
     - Usage: usage.md
-site_name: zend-i18n-resources
-site_description: zend-i18n-resources
-repo_url: 'https://github.com/zendframework/zend-i18n-resources'
-copyright: 'Copyright (c) 2005-2018 <a href="https://www.zend.com/">Zend Technologies USA Inc.</a>'
+site_name: laminas-i18n-resources
+site_description: laminas-i18n-resources
+repo_url: 'https://github.com/laminas/laminas-i18n-resources'

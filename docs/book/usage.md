@@ -1,12 +1,12 @@
 # Usage
 
-To use the resources zend-i18n-resources exposes, retrieve them from the
-`Zend\I18n\Translator\Resources` class and pass them to
-`Zend\I18n\Translator\Translator::addTranslationFilePattern()`:
+To use the resources laminas-i18n-resources exposes, retrieve them from the
+`Laminas\I18n\Translator\Resources` class and pass them to
+`Laminas\I18n\Translator\Translator::addTranslationFilePattern()`:
 
 ```php
-use Zend\I18n\Translator\Resources;
-use Zend\I18n\Translator\Translator;
+use Laminas\I18n\Translator\Resources;
+use Laminas\I18n\Translator\Translator;
 
 $translator = new Translator();
 $translator->addTranslationFilePattern(
@@ -19,7 +19,7 @@ echo $translator->translate('Invalid type given. String expected', 'default', 'e
 ```
 
 You can also use the `getPatternForCaptcha()` method to setup translation messages for
-`zend-captcha`:
+`laminas-captcha`:
 
 ```php
 $translator->addTranslationFilePattern(
@@ -31,18 +31,18 @@ $translator->addTranslationFilePattern(
 
 ## Automating resource injection
 
-If you are fetching `Zend\I18n\Translator\Translator` via `zend-servicemanager`,
+If you are fetching `Laminas\I18n\Translator\Translator` via `laminas-servicemanager`,
 you may want to automate injecting the translation messages. This can be done
-using `zend-servicemanager`'s
-[delegator factories](https://docs.zendframework.com/zend-servicemanager/delegators/).
+using `laminas-servicemanager`'s
+[delegator factories](https://docs.laminas.dev/laminas-servicemanager/delegators/).
 
 As an example, consider the following delegator factory:
 
 ```php
 use Interop\Container\ContainerInterface;
-use Zend\I18n\Translator\Resources;
-use Zend\ServiceManager\DelegatorFactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\I18n\Translator\Resources;
+use Laminas\ServiceManager\DelegatorFactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class TranslatorDelegator implements DelegatorFactoryInterface
 {
@@ -81,7 +81,7 @@ class TranslatorDelegator implements DelegatorFactoryInterface
 
 > ### Forwards compatibility
 >
-> The above definition will work with both zend-servicemanager v2 and v3
+> The above definition will work with both laminas-servicemanager v2 and v3
 > releases. If you are targeting only v3 and up, you can remove the
 > `createDelegatorWithName()` implementation.
 

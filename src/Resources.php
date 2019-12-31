@@ -1,14 +1,15 @@
 <?php
+
 /**
- * @see       http://github.com/zendframework/zend-i18n-resources for the canonical source repository
- * @copyright Copyright (c) 2015-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/zend-i18n-resources/blob/master/LICENSE.md New BSD License
+ * @see       https://github.com/laminas/laminas-i18n-resources for the canonical source repository
+ * @copyright https://github.com/laminas/laminas-i18n-resources/blob/master/COPYRIGHT.md
+ * @license   https://github.com/laminas/laminas-i18n-resources/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\I18n\Translator;
+namespace Laminas\I18n\Translator;
 
 /**
- * Provide paths and patterns for locating zend-i18n translation files.
+ * Provide paths and patterns for locating laminas-i18n translation files.
  */
 final class Resources
 {
@@ -30,22 +31,22 @@ final class Resources
     }
 
     /**
-     * Retrieve the translation file pattern for zend-captcha translations.
+     * Retrieve the translation file pattern for laminas-captcha translations.
      *
      * @return string
      */
     public static function getPatternForCaptcha()
     {
-        return '%s/Zend_Captcha.php';
+        return '%s/Laminas_Captcha.php';
     }
 
     /**
-     * Retrieve the translation file pattern for zend-validator translations.
+     * Retrieve the translation file pattern for laminas-validator translations.
      *
      * @return string
      */
     public static function getPatternForValidator()
     {
-        return '%s/Zend_Validate.php';
+        return '%s/Laminas_Validate.php';
     }
 }
