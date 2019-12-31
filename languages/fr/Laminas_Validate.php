@@ -1,22 +1,9 @@
 <?php
+
 /**
- * Zend Framework
- *
- * LICENSE
- *
- * This source file is subject to the new BSD license that is bundled
- * with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@zend.com so we can send you a copy immediately.
- *
- * @category   Zend
- * @package    Zend_Translator
- * @subpackage Resource
- * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @see       https://github.com/laminas/laminas-i18n-resources for the canonical source repository
+ * @copyright https://github.com/laminas/laminas-i18n-resources/blob/master/COPYRIGHT.md
+ * @license   https://github.com/laminas/laminas-i18n-resources/blob/master/LICENSE.md New BSD License
  */
 
 /**
@@ -106,7 +93,7 @@ return array(
     "Invalid type given. Numeric string, integer or float expected" => "Type invalide. Chaîne numérique, entier ou flottant attendu",
     "Invalid type given. String expected" => "Type invalide. Chaîne attendue",
     "Invalid type given. String or integer expected" => "Type invalide. Chaîne ou entier attendu",
-    "Invalid type given. String, integer, array or Zend_Date expected" => "Type invalide. Chaîne, entier, tableau ou Zend_Date attendu",
+    "Invalid type given. String, integer, array or Laminas_Date expected" => "Type invalide. Chaîne, entier, tableau ou Laminas_Date attendu",
     "Invalid type given. String, integer, float, boolean or array expected" => "Type invalide. Chaîne, entier, flottant, booléen ou tableau attendu",
     "Invalid type given. String, integer or float expected" => "Type invalide. Chaîne, entier ou flottant attendu",
     "Luhn algorithm (mod-10 checksum) failed on '%value%'" => "L'algorithme Luhn (somme de contrôle mod-10) a échoué pour '%value%'",
