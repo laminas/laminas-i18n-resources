@@ -1,18 +1,34 @@
 {
-    "name": "zendframework/zend-i18n-resources",
-    "description": "Provides validator translations for zend-i18n's Translator",
+    "name": "laminas/laminas-i18n-resources",
+    "description": "Provides validator translations for laminas-i18n's Translator",
     "license": "BSD-3-Clause",
     "keywords": [
-        "zf2",
+        "laminas",
         "resources",
         "translations"
     ],
+    "homepage": "https://laminas.dev",
+    "support": {
+        "docs": "https://docs.laminas.dev/laminas-i18n-resources/",
+        "issues": "https://github.com/laminas/laminas-i18n-resources/issues",
+        "source": "https://github.com/laminas/laminas-i18n-resources",
+        "rss": "https://github.com/laminas/laminas-i18n-resources/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
+    },
+    "config": {
+        "sort-packages": true
+    },
     "require": {
-        "php": ">=5.5"
+        "php": ">=5.5",
+        "laminas/laminas-zendframework-bridge": "^1.0"
     },
     "autoload": {
-      "classmap": [
-        "src/Resources.php"
-      ]
+        "classmap": [
+            "src/Resources.php"
+        ]
+    },
+    "replace": {
+        "zendframework/zend-i18n-resources": "self.version"
     }
 }
