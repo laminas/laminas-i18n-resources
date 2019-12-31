@@ -4,7 +4,7 @@
          bootstrap="vendor/autoload.php"
          colors="true">
     <testsuites>
-        <testsuite name="zend-i18n-resources Test Suite">
+        <testsuite name="laminas-i18n-resources Test Suite">
             <directory>./test</directory>
         </testsuite>
     </testsuites>
