@@ -18,7 +18,7 @@ before_script:
 script:
   - bin/check-cs.sh
   # Run tests for the various components in parallel
-  - ls -d tests/ZendTest/* | parallel --gnu --keep-order 'echo "Running {} tests"; ./vendor/bin/phpunit -c tests/phpunit.xml.dist --coverage-php build/coverage/coverage-{/.}.cov {};' || exit 1
+  - ls -d tests/LaminasTest/* | parallel --gnu --keep-order 'echo "Running {} tests"; ./vendor/bin/phpunit -c tests/phpunit.xml.dist --coverage-php build/coverage/coverage-{/.}.cov {};' || exit 1
 
 after_script:
   # Merges the individual clover reports of each component into a single clover.xml
@@ -26,7 +26,6 @@ after_script:
   - php vendor/bin/coveralls
 
 notifications:
-  irc: "irc.freenode.org#zftalk.dev"
   email: false
 
 matrix:
