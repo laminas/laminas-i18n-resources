@@ -6,3 +6,6 @@ nav:
 site_name: laminas-i18n-resources
 site_description: laminas-i18n-resources
 repo_url: 'https://github.com/laminas/laminas-i18n-resources'
+extra:
+    project: Components
+    project_url: 'https://docs.laminas.dev'
