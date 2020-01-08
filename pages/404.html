@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="laminas-i18n-resources">  
-    <link rel="canonical" href="https://docs.laminas.dev/usage/">
     <link rel="shortcut icon" href="/img/trademark-laminas-foundation-rgb.svg">
 
-    <title>Usage - laminas-i18n-resources - Laminas Docs</title>
+    <title>laminas-i18n-resources - Laminas Docs</title>
 
     <link rel="stylesheet" href="/css/styles.css">
 </head>
@@ -59,7 +58,7 @@
                     
     <div class="subnavigation hidden-print">
         <h4 class="subnavigation__title">
-            <a href="..">laminas-i18n-resources</a>
+            <a href="../.">laminas-i18n-resources</a>
         </h4>
 
         <h5 class="subnavigation__subtitle">Table of Contents</h5>
@@ -73,8 +72,8 @@
                     
                     
                         
-                            <li class="subnavigation__list-item subnavigation__list-item--active">
-                                <a href="./" class="subnavigation__link">Usage</a>
+                            <li class="subnavigation__list-item ">
+                                <a href="../usage/" class="subnavigation__link">Usage</a>
                             </li>
                         
                     
@@ -139,167 +138,21 @@
         <div class="row">
             <div class="col-md-2 col-sm-12">
                 
-    
-
-    
-    
-        <div class="toc">
-            <h6 class="toc__headline">On this page</h6>
-            <ul class="toc__list">
-                
-                    <li class="toc__entry">
-                        <a href="#automating-resource-injection" class="toc__link">Automating resource injection</a>
-                    </li>
-                
-            </ul>
-        </div>
-    
-
             </div>
             <div class="col-md-7 col-sm-12 content" role="main" data-spy="scroll" data-target=".toc">
                 
-                    <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        
-            <li class="breadcrumb-item"><a href="">Overview</a></li>
 
-            
-                <li class="breadcrumb-item"><a href="..">laminas-i18n-resources</a></li>
-
-                
-
-                <li class="breadcrumb-item active" aria-current="page">Usage</li>
-            
-        
-    </ol>
-</nav>
-
-
-
-
-
-
-    
-    
-
-    <h1 id="usage">Usage</h1>
-<p>To use the resources laminas-i18n-resources exposes, retrieve them from the
-<code>Laminas\I18n\Translator\Resources</code> class and pass them to
-<code>Laminas\I18n\Translator\Translator::addTranslationFilePattern()</code>:</p>
-<pre class=codehilite><code class=language-php>use Laminas\I18n\Translator\Resources;
-use Laminas\I18n\Translator\Translator;
-
-$translator = new Translator();
-$translator-&gt;addTranslationFilePattern(
-    'phpArray',
-    Resources::getBasePath(),
-    Resources::getPatternForValidator()
-);
-
-echo $translator-&gt;translate('Invalid type given. String expected', 'default', 'es');</code></pre>
-<p>You can also use the <code>getPatternForCaptcha()</code> method to setup translation messages for
-<code>laminas-captcha</code>:</p>
-<pre class=codehilite><code class=language-php>$translator-&gt;addTranslationFilePattern(
-    'phpArray',
-    Resources::getBasePath(),
-    Resources::getPatternForCaptcha()
-);</code></pre>
-<h2 id="automating-resource-injection">Automating resource injection</h2>
-<p>If you are fetching <code>Laminas\I18n\Translator\Translator</code> via <code>laminas-servicemanager</code>,
-you may want to automate injecting the translation messages. This can be done
-using <code>laminas-servicemanager</code>'s
-<a href="https://docs.laminas.dev/laminas-servicemanager/delegators/">delegator factories</a>.</p>
-<p>As an example, consider the following delegator factory:</p>
-<pre class=codehilite><code class=language-php>use Interop\Container\ContainerInterface;
-use Laminas\I18n\Translator\Resources;
-use Laminas\ServiceManager\DelegatorFactoryInterface;
-use Laminas\ServiceManager\ServiceLocatorInterface;
-
-class TranslatorDelegator implements DelegatorFactoryInterface
-{
-    public function __invoke(
-        ContainerInterface $container,
-        $name,
-        callable $callback,
-        array $options = null
-    ) {
-        $translator = $callback();
-
-        $translator-&gt;addTranslationFilePattern(
-            'phpArray',
-            Resources::getBasePath(),
-            Resources::getPatternForValidator()
-        );
-        $translator-&gt;addTranslationFilePattern(
-            'phpArray',
-            Resources::getBasePath(),
-            Resources::getPatternForCaptcha()
-        );
-
-        return $translator;
-    }
-
-    public function createDelegatorWithName(
-        ServiceLocatorInterface $container,
-        $name,
-        $requestedName,
-        $callback
-    ) {
-        return $this($container, $requestedName, $callback);
-    }
-}</code></pre>
+<h1 class="content__title">404</h1>
 <blockquote>
-<h3>Forwards compatibility</h3>
-<p>The above definition will work with both laminas-servicemanager v2 and v3
-releases. If you are targeting only v3 and up, you can remove the
-<code>createDelegatorWithName()</code> implementation.</p>
+    <h3>Something went wrong!</h3>
+    <p>
+        We're sorry, but the page you are looking for does not exist.
+    </p>
 </blockquote>
-<p>You would then register this in your configuration:</p>
-<pre class=codehilite><code class=language-php>return [
-    'service_manager' =&gt; [
-        'delegators' =&gt; [
-            'MvcTranslator' =&gt; [
-                'TranslatorDelegator',
-            ],
-        ],
-    ],
-];</code></pre>
+
+<a href="../." class="btn btn-default" role="button">Go to homepage</a>
 
 
-
-
-    <nav>
-    <ul class="page-nav hidden-print">
-
-        
-        <li class="page-nav__item">
-            
-                <a rel="prev" class="page-nav__link page-nav__link--prev" href="..">
-                    <i class="fa fa-chevron-left"></i> Previous
-                </a>
-            
-        </li>
-
-        
-        <li class="page-nav__item">
-            
-        </li>
-    </ul>
-</nav>
-
-
-
-
-    <div class="help-wanted">
-        <p>
-            Found a mistake or want to contribute to the documentation?
-            <a href="https://github.com/laminas/laminas-i18n-resources/edit/master/docs/book/usage.md" target="_blank" class="help-wanted__link">
-                Edit this page on GitHub!
-            </a>
-        </p>
-    </div>
-
-                
             </div>
             <div class="col-md-3 col-sm-12 sidebar">
                 
@@ -314,7 +167,7 @@ releases. If you are targeting only v3 and up, you can remove the
                     
     <div class="subnavigation hidden-print">
         <h4 class="subnavigation__title">
-            <a href="..">laminas-i18n-resources</a>
+            <a href="../.">laminas-i18n-resources</a>
         </h4>
 
         <h5 class="subnavigation__subtitle">Table of Contents</h5>
@@ -328,8 +181,8 @@ releases. If you are targeting only v3 and up, you can remove the
                     
                     
                         
-                            <li class="subnavigation__list-item subnavigation__list-item--active">
-                                <a href="./" class="subnavigation__link">Usage</a>
+                            <li class="subnavigation__list-item ">
+                                <a href="../usage/" class="subnavigation__link">Usage</a>
                             </li>
                         
                     
