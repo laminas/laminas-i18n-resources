@@ -1,7 +1,7 @@
 docs_dir: docs/book
 site_dir: docs/html
 nav:
-    - index.md
+    - Home: index.md
     - Usage: usage.md
 site_name: laminas-i18n-resources
 site_description: laminas-i18n-resources
