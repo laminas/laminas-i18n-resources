@@ -248,4 +248,9 @@ return [
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
     "'%value%' is less than %min% characters long" => "'%value%' on lyhyempi kuin vaaditut %min% merkkiä",
     "'%value%' is more than %max% characters long" => "'%value%' on pidempi kuin sallitut %max% merkkiä",
+
+    // Laminas\Validator\Timezone
+    "Invalid timezone given." => "Annettu aikavyöhyke ei ole kelvollinen.",
+    "Invalid timezone location given." => "Annettu aikavyöhykkeen sijainti ei ole kelvollinen.",
+    "Invalid timezone abbreviation given." => "Annettu aikavyöhykkeen lyhenne ei ole kelvollinen.",
 ];
