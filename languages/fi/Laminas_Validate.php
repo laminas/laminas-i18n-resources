@@ -253,4 +253,8 @@ return [
     "Invalid timezone given." => "Annettu aikavyöhyke ei ole kelvollinen.",
     "Invalid timezone location given." => "Annettu aikavyöhykkeen sijainti ei ole kelvollinen.",
     "Invalid timezone abbreviation given." => "Annettu aikavyöhykkeen lyhenne ei ole kelvollinen.",
+
+    // Laminas\Validator\Uri
+    "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
+    "The input does not appear to be a valid Uri" => "Syöte ei ole kelvollinen Uri",
 ];
