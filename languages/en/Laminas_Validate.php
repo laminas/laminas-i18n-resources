@@ -37,6 +37,7 @@ return [
     // Laminas\I18n\Validator\IsInt
     "Invalid type given. String or integer expected" => "Invalid type given. String or integer expected",
     "The input does not appear to be an integer" => "The input does not appear to be an integer",
+    "The input is not strictly an integer" => "The input is not strictly an integer",
 
     // Laminas\I18n\Validator\PhoneNumber
     "The input does not match a phone number format" => "The input does not match a phone number format",
