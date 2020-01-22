@@ -185,13 +185,13 @@ return [
     "File is not readable or does not exist" => "File is not readable or does not exist",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "File '%value%' exceeds the defined ini size",
-    "File '%value%' exceeds the defined form size" => "File '%value%' exceeds the defined form size",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "File '%value%' exceeds upload_max_filesize directive in php.ini",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form",
     "File '%value%' was only partially uploaded" => "File '%value%' was only partially uploaded",
     "File '%value%' was not uploaded" => "File '%value%' was not uploaded",
-    "No temporary directory was found for file '%value%'" => "No temporary directory was found for file '%value%'",
-    "File '%value%' can't be written" => "File '%value%' can't be written",
-    "A PHP extension returned an error while uploading the file '%value%'" => "A PHP extension returned an error while uploading the file '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Missing a temporary folder to store '%value%'",
+    "Failed to write file '%value%' to disk" => "Failed to write file '%value%' to disk",
+    "A PHP extension stopped uploading the file '%value%'" => "A PHP extension stopped uploading the file '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "File '%value%' was illegally uploaded. This could be a possible attack",
     "File '%value%' was not found" => "File '%value%' was not found",
     "Unknown error while uploading file '%value%'" => "Unknown error while uploading file '%value%'",

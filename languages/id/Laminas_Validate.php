@@ -145,13 +145,13 @@ return [
     "Minimum expected size for file is '%min%' but '%size%' detected" => "Ukuran minimal yang diharapkan adalah '%min%' tetapi '%size%' terdeteksi",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Berkas '%value%' melebihi ukuran ini yang didefinisikan",
-    "File '%value%' exceeds the defined form size" => "Berkas '%value%' melebihi ukuran form yang didefinisikan",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Berkas '%value%' melebihi ukuran ini yang didefinisikan",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Berkas '%value%' melebihi ukuran form yang didefinisikan",
     "File '%value%' was only partially uploaded" => "Berkas '%value%' hanya sebagian terupload",
     "File '%value%' was not uploaded" => "Berkas '%value%' tidak dapat terupload",
-    "No temporary directory was found for file '%value%'" => "Tidak ada direktori sementara yang ditemukan untuk berkas '%value%'",
-    "File '%value%' can't be written" => "Berkas '%value%' tidak dapat ditulis",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Ekstensi PHP mengembalikan galat pada saat upload berkas '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Tidak ada direktori sementara yang ditemukan untuk berkas '%value%'",
+    "Failed to write file '%value%' to disk" => "Berkas '%value%' tidak dapat ditulis",
+    "A PHP extension stopped uploading the file '%value%'" => "Ekstensi PHP mengembalikan galat pada saat upload berkas '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Berkas '%value%' secara ilegal diunggah. Hal ini bisa menjadi kemungkinan serangan",
     "File '%value%' was not found" => "Berkas '%value%' tidak ditemukan",
     "Unknown error while uploading file '%value%'" => "Galat tidak diketahui pada saat proses mengupload berkas '%value%'",

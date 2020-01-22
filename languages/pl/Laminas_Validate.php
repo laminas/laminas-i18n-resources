@@ -155,13 +155,13 @@ return [
     "Minimum expected size for file is '%min%' but '%size%' detected" => "Podany plik ma rozmiar '%size%'. Minimalny rozmiar pliku to '%min%'",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Rozmiar pliku '%value%' przekroczył zdefiniowaną wartość w ini",
-    "File '%value%' exceeds the defined form size" => "Rozmiar pliku '%value%' przekroczył zdefiniowaną wartość w formularzu",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Rozmiar pliku '%value%' przekroczył zdefiniowaną wartość w ini",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Rozmiar pliku '%value%' przekroczył zdefiniowaną wartość w formularzu",
     "File '%value%' was only partially uploaded" => "Plik '%value%' nie został całkowicie wysłany",
     "File '%value%' was not uploaded" => "Plik '%value%' nie został wysłany",
-    "No temporary directory was found for file '%value%'" => "Nie zdefiniowano tymczasowego katalogu",
-    "File '%value%' can't be written" => "Nie można zapisać pliku '%value%'",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Rozszerzenie PHP zgłosiło wyjątek podczas wysyłania pliku '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Nie zdefiniowano tymczasowego katalogu",
+    "Failed to write file '%value%' to disk" => "Nie można zapisać pliku '%value%'",
+    "A PHP extension stopped uploading the file '%value%'" => "Rozszerzenie PHP zgłosiło wyjątek podczas wysyłania pliku '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Plik '%value%' został niepoprawnie wysłany. Istnieje możliwość wystąpienia ataku",
     "File '%value%' was not found" => "Nie znaleziono pliku '%value%'",
     "Unknown error while uploading file '%value%'" => "Nieznany błąd podczas wysyłania pliku '%value%'",

@@ -164,13 +164,13 @@ return [
     "File '%value%' is not readable or does not exist" => "文件'%value%'無法讀取或不存在",
 
     // Laminas_Validator_File_Upload
-    "File '%value%' exceeds the defined ini size" => "文件'%value%'大小超出系統允許範圍",
-    "File '%value%' exceeds the defined form size" => "文件'%value%'大小超出表單允許範圍",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "文件'%value%'大小超出系統允許範圍",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "文件'%value%'大小超出表單允許範圍",
     "File '%value%' was only partially uploaded" => "文件'%value%'上傳不完整",
     "File '%value%' was not uploaded" => "文件'%value%'沒有被上傳",
-    "No temporary directory was found for file '%value%'" => "沒有找到臨時文件夾存放文件'%value%'",
-    "File '%value%' can't be written" => "文件'%value%'無法被寫入",
-    "A PHP extension returned an error while uploading the file '%value%'" => "文件'%value%'上傳時發生了一個PHP擴展錯誤",
+    "Missing a temporary folder to store '%value%'" => "沒有找到臨時文件夾存放文件'%value%'",
+    "Failed to write file '%value%' to disk" => "文件'%value%'無法被寫入",
+    "A PHP extension stopped uploading the file '%value%'" => "文件'%value%'上傳時發生了一個PHP擴展錯誤",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "文件'%value%'被非法上傳，這可能被判定為一次入侵",
     "File '%value%' was not found" => "文件'%value%'不存在",
     "Unknown error while uploading file '%value%'" => "文件'%value%'上傳時發生了一個未知錯誤",

@@ -164,13 +164,13 @@ return [
     "File '%value%' is not readable or does not exist" => "Filen '%value%' är inte läsbar eller existerar inte",
 
     // Laminas_Validator_File_Upload
-    "File '%value%' exceeds the defined ini size" => "Filen '%value%' överskrider den definerade ini-storleken",
-    "File '%value%' exceeds the defined form size" => "Filen '%value%' överskrider den definerade formulär-storleken",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Filen '%value%' överskrider den definerade ini-storleken",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Filen '%value%' överskrider den definerade formulär-storleken",
     "File '%value%' was only partially uploaded" => "Filen '%value%' blev enbart delvis uppladdad",
     "File '%value%' was not uploaded" => "Filen '%value%' laddades inte upp",
-    "No temporary directory was found for file '%value%'" => "Ingen temporär mapp hittades för filen '%value%'",
-    "File '%value%' can't be written" => "Filen '%value%' kan inte skrivas",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Ett PHP-tillägg returnerade ett fel när filen '%value%' laddades upp",
+    "Missing a temporary folder to store '%value%'" => "Ingen temporär mapp hittades för filen '%value%'",
+    "Failed to write file '%value%' to disk" => "Filen '%value%' kan inte skrivas",
+    "A PHP extension stopped uploading the file '%value%'" => "Ett PHP-tillägg returnerade ett fel när filen '%value%' laddades upp",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Filen '%value%' laddades upp olagligt. Det här kan vara en möjlig attack",
     "File '%value%' was not found" => "Filen '%value%' hittades inte",
     "Unknown error while uploading file '%value%'" => "Okänt fel när filen '%value%' laddades upp",

@@ -171,13 +171,13 @@ return [
     "File is not readable or does not exist" => "Het bestand kon niet worden gevonden",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Het bestand '%value%' overschrijdt de ini grootte",
-    "File '%value%' exceeds the defined form size" => "Het bestand '%value%' overschrijdt de formulier grootte",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Het bestand '%value%' overschrijdt de ini grootte",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Het bestand '%value%' overschrijdt de formulier grootte",
     "File '%value%' was only partially uploaded" => "Het bestand '%value%' was slechts gedeeltelijk geüpload",
     "File '%value%' was not uploaded" => "Het bestand '%value%' was niet geüpload",
-    "No temporary directory was found for file '%value%'" => "Geen tijdelijke map was gevonden voor bestand '%value%'",
-    "File '%value%' can't be written" => "Het bestand '%value%' kan niet worden geschreven",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Een PHP-extensie gaf een foutmelding terug tijdens het uploaden van het bestand '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Geen tijdelijke map was gevonden voor bestand '%value%'",
+    "Failed to write file '%value%' to disk" => "Het bestand '%value%' kan niet worden geschreven",
+    "A PHP extension stopped uploading the file '%value%'" => "Een PHP-extensie gaf een foutmelding terug tijdens het uploaden van het bestand '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Het bestand '%value%' was illegaal geüpload. Dit kan een aanval zijn",
     "File '%value%' was not found" => "Het bestand '%value%' kon niet worden gevonden",
     "Unknown error while uploading file '%value%'" => "Er is een onbekende fout opgetreden tijdens het uploaden van '%value%'",

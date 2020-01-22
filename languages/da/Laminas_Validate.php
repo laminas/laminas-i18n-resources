@@ -186,13 +186,13 @@ return [
     "File is not readable or does not exist" => "Filen kan ikke læses eller eksisterer ikke",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Filen '%value%' overskrider den definerede ini-størrelse",
-    "File '%value%' exceeds the defined form size" => "Filen '%value%' overskrider den definerede formularstørrelse",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Filen '%value%' overskrider den definerede ini-størrelse",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Filen '%value%' overskrider den definerede formularstørrelse",
     "File '%value%' was only partially uploaded" => "Filen '%value%' blev kun delvist uploadet",
     "File '%value%' was not uploaded" => "Filen '%value%' blev ikke uploadet",
-    "No temporary directory was found for file '%value%'" => "Ingen midlertidig mappe blev fundet for filen '%value%'",
-    "File '%value%' can't be written" => "Filen '%value%' kan ikke skrives",
-    "A PHP extension returned an error while uploading the file '%value%'" => "En PHP-udvidelse forårsagede en fejl ved upload af filen '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Ingen midlertidig mappe blev fundet for filen '%value%'",
+    "Failed to write file '%value%' to disk" => "Filen '%value%' kan ikke skrives",
+    "A PHP extension stopped uploading the file '%value%'" => "En PHP-udvidelse forårsagede en fejl ved upload af filen '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Filen '%value%' blev ulovligt uploadet. Dette kan være et muligt angreb",
     "File '%value%' was not found" => "Filen '%value%' blev ikke fundet",
     "Unknown error while uploading file '%value%'" => "Ukendt fejl opstod ved upload af filen '%value%'",

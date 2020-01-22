@@ -185,13 +185,13 @@ return [
     "File is not readable or does not exist" => "Le fichier n'est pas lisible ou n'existe pas",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Le fichier '%value%' dépasse la taille définie dans le fichier INI",
-    "File '%value%' exceeds the defined form size" => "Le fichier '%value%' dépasse la taille définie dans le formulaire",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Le fichier '%value%' dépasse la taille définie dans le fichier INI",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Le fichier '%value%' dépasse la taille définie dans le formulaire",
     "File '%value%' was only partially uploaded" => "Le fichier '%value%' n'a été que partiellement envoyé",
     "File '%value%' was not uploaded" => "Le fichier '%value%' n'a pas été envoyé",
-    "No temporary directory was found for file '%value%'" => "Le dossier temporaire n'a pas été trouvé pour le fichier '%value%'",
-    "File '%value%' can't be written" => "Impossible d'écrire dans le fichier '%value%'",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Une extension PHP a retourné une erreur en envoyant le fichier '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Le dossier temporaire n'a pas été trouvé pour le fichier '%value%'",
+    "Failed to write file '%value%' to disk" => "Impossible d'écrire dans le fichier '%value%'",
+    "A PHP extension stopped uploading the file '%value%'" => "Une extension PHP a retourné une erreur en envoyant le fichier '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Le fichier '%value%' a été envoyé illégalement. Il peut s'agir d'une attaque",
     "File '%value%' was not found" => "Le fichier '%value%' n'a pas été trouvé",
     "Unknown error while uploading file '%value%'" => "Erreur inconnue lors de l'envoi du fichier '%value%'",

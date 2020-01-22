@@ -149,13 +149,13 @@ return [
     "File '%value%' is not readable or does not exist" => "الملف '%value%' لا يمكن قراءته أو أنه غير موجود",
 
     // Laminas_Validate_File_Upload
-    "File '%value%' exceeds the defined ini size" => "الملف '%value%' تعدى الحجم المسموح به حسب التعريف في ini",
-    "File '%value%' exceeds the defined form size" => "الملف '%value%' تعدى الحجم المسموح به حسب التعريف في النموذج",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "الملف '%value%' تعدى الحجم المسموح به حسب التعريف في ini",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "الملف '%value%' تعدى الحجم المسموح به حسب التعريف في النموذج",
     "File '%value%' was only partially uploaded" => "الملف '%value%' تم تحميل جزء منه",
     "File '%value%' was not uploaded" => "الملف '%value%' لم يتم تحميله",
-    "No temporary directory was found for file '%value%'" => "لم يتم العثور على مكان مؤقت للملف '%value%'",
-    "File '%value%' can't be written" => "الملف '%value%' لا يمكن كتابته وتخزينه",
-    "A PHP extension returned an error while uploading the file '%value%'" => "لقد حصل خطأ من إضافة PHP في عملية تحميل الملف '%value%'",
+    "Missing a temporary folder to store '%value%'" => "لم يتم العثور على مكان مؤقت للملف '%value%'",
+    "Failed to write file '%value%' to disk" => "الملف '%value%' لا يمكن كتابته وتخزينه",
+    "A PHP extension stopped uploading the file '%value%'" => "لقد حصل خطأ من إضافة PHP في عملية تحميل الملف '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "لقد تم تحميل الملف '%value%' بطريقة غير مشروعة. وهذا يمكن أن يكون محاولة هجوم",
     "File '%value%' was not found" => "لم يتم العثور على الملف '%value%'",
     "Unknown error while uploading file '%value%'" => "حصل خطأ غير معروف في عملية تحميل الملف '%value%'",

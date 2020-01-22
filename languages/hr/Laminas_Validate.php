@@ -149,13 +149,13 @@ return [
     "File '%value%' could not be found" => "Datoteku '%value%' nije moguće pronaći",
 
     // Laminas_Validate_File_Upload
-    "File '%value%' exceeds the defined ini size" => "Datoteka '%value%' prelazi veličinu definiranu u ini datoteci",
-    "File '%value%' exceeds the defined form size" => "Datoteka '%value%' prelazi veličinu definiranu u formi",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Datoteka '%value%' prelazi veličinu definiranu u ini datoteci",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Datoteka '%value%' prelazi veličinu definiranu u formi",
     "File '%value%' was only partially uploaded" => "Datoteka '%value%' je samo djelomično poslana",
     "File '%value%' was not uploaded" => "Datoteka '%value%' nije poslana",
-    "No temporary directory was found for file '%value%'" => "Nije pronađen privremeni direktorij za datoteku '%value%'",
-    "File '%value%' can't be written" => "Datoteku '%value%' nije moguće zapisati",
-    "A PHP extension returned an error while uploading the file '%value%'" => "PHP ekstenzija je vratila pogrešku prilikom slanja datoteke '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Nije pronađen privremeni direktorij za datoteku '%value%'",
+    "Failed to write file '%value%' to disk" => "Datoteku '%value%' nije moguće zapisati",
+    "A PHP extension stopped uploading the file '%value%'" => "PHP ekstenzija je vratila pogrešku prilikom slanja datoteke '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Datoteka '%value%' je nelegalno poslana. Ovo bi mogao biti napad",
     "File '%value%' was not found" => "Datoteka '%value%' nije pronađena",
     "Unknown error while uploading file '%value%'" => "Nepoznata pogreška prilikom slanja datoteke '%value%'",

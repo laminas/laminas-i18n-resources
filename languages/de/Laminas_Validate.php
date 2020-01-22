@@ -173,13 +173,13 @@ return [
     "File is not readable or does not exist" => "Die Datei ist nicht lesbar oder existiert nicht",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Die Datei '%value%' übersteigt die definierte Größe in der Konfiguration",
-    "File '%value%' exceeds the defined form size" => "Die Datei '%value%' übersteigt die definierte Größe des Formulars",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Die Datei '%value%' übersteigt die definierte Größe in der Konfiguration",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Die Datei '%value%' übersteigt die definierte Größe des Formulars",
     "File '%value%' was only partially uploaded" => "Die Datei '%value%' wurde nur teilweise hochgeladen",
     "File '%value%' was not uploaded" => "Die Datei '%value%' wurde nicht hochgeladen",
-    "No temporary directory was found for file '%value%'" => "Für die Datei '%value%' wurde kein temporäres Verzeichnis gefunden",
-    "File '%value%' can't be written" => "Die Datei '%value%' konnte nicht geschrieben werden",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Eine PHP Erweiterung hat einen Fehler ausgegeben während die Datei '%value%' hochgeladen wurde",
+    "Missing a temporary folder to store '%value%'" => "Für die Datei '%value%' wurde kein temporäres Verzeichnis gefunden",
+    "Failed to write file '%value%' to disk" => "Die Datei '%value%' konnte nicht geschrieben werden",
+    "A PHP extension stopped uploading the file '%value%'" => "Eine PHP Erweiterung hat einen Fehler ausgegeben während die Datei '%value%' hochgeladen wurde",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Die Datei '%value%' wurde illegal hochgeladen. Dies könnte eine mögliche Attacke sein",
     "File '%value%' was not found" => "Die Datei '%value%' wurde nicht gefunden",
     "Unknown error while uploading file '%value%'" => "Ein unbekannter Fehler ist aufgetreten während die Datei '%value%' hochgeladen wurde",

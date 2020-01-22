@@ -171,13 +171,13 @@ return [
     "File is not readable or does not exist" => "A fájl nem létezik vagy nem olvasható",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "A(z) '%value%' fájl mérete meghaladja a PHP beállításokban megengedettet",
-    "File '%value%' exceeds the defined form size" => "A(z) '%value%' fájl mérete meghaladja az űrlap által megengedettet",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "A(z) '%value%' fájl mérete meghaladja a PHP beállításokban megengedettet",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "A(z) '%value%' fájl mérete meghaladja az űrlap által megengedettet",
     "File '%value%' was only partially uploaded" => "A(z) '%value%' fájl csak részlegesen lett feltöltve",
     "File '%value%' was not uploaded" => "A(z) '%value%' fájl nem lett feltöltve",
-    "No temporary directory was found for file '%value%'" => "A(z) '%value%' fájl számára nem található átmeneti könyvtár",
-    "File '%value%' can't be written" => "A(z) '%value%' fájl nem írható",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Egy PHP kiterjesztés nem várt hibát okozott a(z) '%value%' fájl feltöltése közben",
+    "Missing a temporary folder to store '%value%'" => "A(z) '%value%' fájl számára nem található átmeneti könyvtár",
+    "Failed to write file '%value%' to disk" => "A(z) '%value%' fájl nem írható",
+    "A PHP extension stopped uploading the file '%value%'" => "Egy PHP kiterjesztés nem várt hibát okozott a(z) '%value%' fájl feltöltése közben",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "A(z) '%value%' fájl illegálisan került feltöltésre. Elképzelhető, hogy ez egy támadás következménye",
     "File '%value%' was not found" => "A(z) '%value%' fájl nem található",
     "Unknown error while uploading file '%value%'" => "Ismeretlen hiba történt a(z) '%value%' fájl feltöltése közben",

@@ -185,13 +185,13 @@ return [
     "File is not readable or does not exist" => "Súbor buď nie je čitateľný, alebo neexistuje",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Súbor '%value%' prekročil veľkosť definovanú v ini súbore",
-    "File '%value%' exceeds the defined form size" => "Súbor '%value%' prekročil veľkosť definovanú vo formulári",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Súbor '%value%' prekročil veľkosť definovanú v ini súbore",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Súbor '%value%' prekročil veľkosť definovanú vo formulári",
     "File '%value%' was only partially uploaded" => "Súbor '%value%' bol odoslaný len čiastočne",
     "File '%value%' was not uploaded" => "Súbor '%value%' nebol odoslaný",
-    "No temporary directory was found for file '%value%'" => "Pre súbor '%value%' nebol nájdený žiadny dočasný adresár",
-    "File '%value%' can't be written" => "Súbor '%value%' nemôže byť zapísaný",
-    "A PHP extension returned an error while uploading the file '%value%'" => "PHP rozšírenie vrátilo chybu počas nahrávania súboru '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Pre súbor '%value%' nebol nájdený žiadny dočasný adresár",
+    "Failed to write file '%value%' to disk" => "Súbor '%value%' nemôže byť zapísaný",
+    "A PHP extension stopped uploading the file '%value%'" => "PHP rozšírenie vrátilo chybu počas nahrávania súboru '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Súbor '%value%' bol neoprávnene nahraný. Môže se jednať o útok",
     "File '%value%' was not found" => "Súbor '%value%' nebol nájdený",
     "Unknown error while uploading file '%value%'" => "Počas odosielania súboru '%value%' došlo k chybe",

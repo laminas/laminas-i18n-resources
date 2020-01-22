@@ -185,13 +185,13 @@ return [
     "File is not readable or does not exist" => "Фајл не може бити прочитан или не постоји",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Фајл '%value%' превазилази дефинисану ini величину",
-    "File '%value%' exceeds the defined form size" => "Фајл '%value%' превазилази дефинисану form величину",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Фајл '%value%' превазилази дефинисану ini величину",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Фајл '%value%' превазилази дефинисану form величину",
     "File '%value%' was only partially uploaded" => "Фајл '%value%' је само делимично учитан",
     "File '%value%' was not uploaded" => "Фајл '%value%' није учитан",
-    "No temporary directory was found for file '%value%'" => "Није пронађен привремени директоријум за фајл '%value%'",
-    "File '%value%' can't be written" => "Фајл '%value%' не може бити написан",
-    "A PHP extension returned an error while uploading the file '%value%'" => "PHP екстензија је дала грешку приликом учитавања фајла '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Није пронађен привремени директоријум за фајл '%value%'",
+    "Failed to write file '%value%' to disk" => "Фајл '%value%' не може бити написан",
+    "A PHP extension stopped uploading the file '%value%'" => "PHP екстензија је дала грешку приликом учитавања фајла '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Фајл '%value%' је илегално учитан. Ово је могући напад",
     "File '%value%' was not found" => "Фајл '%value%' није пронађен",
     "Unknown error while uploading file '%value%'" => "Непозната грешка приликом учитавања фајла '%value%'",

@@ -149,13 +149,13 @@ return [
     "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voidea lukea tai sitä ei ole",
 
     // Laminas_Validate_File_Upload
-    "File '%value%' exceeds the defined ini size" => "Tiedosto '%value%' ylittää ini-tiedostossa määritellyn tiedostokoon",
-    "File '%value%' exceeds the defined form size" => "Tiedosto '%value%' ylittää lomakkeessa määritellyn tiedostokoon",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Tiedosto '%value%' ylittää ini-tiedostossa määritellyn tiedostokoon",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Tiedosto '%value%' ylittää lomakkeessa määritellyn tiedostokoon",
     "File '%value%' was only partially uploaded" => "Tiedosto '%value%' vastaanotettiin ainoastaan osittain",
     "File '%value%' was not uploaded" => "Tiedostoa '%value%' ei lähetetty",
-    "No temporary directory was found for file '%value%'" => "Väliaikaishakemistoa ei löytynyt tiedostolle '%value%'",
-    "File '%value%' can't be written" => "Tiedostoon '%value%' ei voida kirjoittaa",
-    "A PHP extension returned an error while uploading the file '%value%'" => "PHP:n lisäosa palautti virheen kesken tiedoston '%value%' lähetyksen",
+    "Missing a temporary folder to store '%value%'" => "Väliaikaishakemistoa ei löytynyt tiedostolle '%value%'",
+    "Failed to write file '%value%' to disk" => "Tiedostoon '%value%' ei voida kirjoittaa",
+    "A PHP extension stopped uploading the file '%value%'" => "PHP:n lisäosa palautti virheen kesken tiedoston '%value%' lähetyksen",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Tiedoston '%value%' lähetyksessä haivattu laittomuus, mahdollinen hyökkäys",
     "File '%value%' was not found" => "Tiedostoa '%value%' ei löydy",
     "Unknown error while uploading file '%value%'" => "Tiedoston '%value%' lähetyksessä tapahtui tunnistamaton virhe",

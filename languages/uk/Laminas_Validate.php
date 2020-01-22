@@ -172,13 +172,13 @@ return [
     "File is not readable or does not exist" => "Файл не вдається прочитати або він не існує",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Розмір файлу '%value%' перевищує дозволений, вказаний в php.ini",
-    "File '%value%' exceeds the defined form size" => "Розмір файлу '%value%' перевищує дозволений, вказаний у формі",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Розмір файлу '%value%' перевищує дозволений, вказаний в php.ini",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Розмір файлу '%value%' перевищує дозволений, вказаний у формі",
     "File '%value%' was only partially uploaded" => "Файл '%value%' було завантажено тільки частково",
     "File '%value%' was not uploaded" => "Файл '%value%' не було завантажений",
-    "No temporary directory was found for file '%value%'" => "Не знайдено тимчасову теку для файлу '%value%'",
-    "File '%value%' can't be written" => "Файл '%value%' не може бути записаний",
-    "A PHP extension returned an error while uploading the file '%value%'" => "PHP-розширення повернуло помилку під час завантаження фалу '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Не знайдено тимчасову теку для файлу '%value%'",
+    "Failed to write file '%value%' to disk" => "Файл '%value%' не може бути записаний",
+    "A PHP extension stopped uploading the file '%value%'" => "PHP-розширення повернуло помилку під час завантаження фалу '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Файл '%value%' завантажено протиправно. Можлива атака",
     "File '%value%' was not found" => "Файл '%value%' не знайдено",
     "Unknown error while uploading file '%value%'" => "Під час завантаження файлу '%value%' виникла невідома помилка",

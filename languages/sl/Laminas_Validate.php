@@ -185,13 +185,13 @@ return [
     "File is not readable or does not exist" => "Datoteka ni na voljo za branje ali pa ne obstaja",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Datoteka '%value%' presega definirano ini vrednost",
-    "File '%value%' exceeds the defined form size" => "Datoteka '%value%' presega velikost definirano v obrazcu",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Datoteka '%value%' presega definirano ini vrednost",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Datoteka '%value%' presega velikost definirano v obrazcu",
     "File '%value%' was only partially uploaded" => "Datoteka '%value%' je bila samo delno naložena",
     "File '%value%' was not uploaded" => "Datoteka '%value%' ni bila naložena",
-    "No temporary directory was found for file '%value%'" => "Začasnega direktorija ni bilo mogoče najti za datoteko '%value%'",
-    "File '%value%' can't be written" => "Datoteke '%value%' ni mogoče zapisati",
-    "A PHP extension returned an error while uploading the file '%value%'" => "PHP razširitev je vrnila napako med nalaganjem datoteke '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Začasnega direktorija ni bilo mogoče najti za datoteko '%value%'",
+    "Failed to write file '%value%' to disk" => "Datoteke '%value%' ni mogoče zapisati",
+    "A PHP extension stopped uploading the file '%value%'" => "PHP razširitev je vrnila napako med nalaganjem datoteke '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Datoteka '%value%' je bila nelegalno naložena. To je lahko potencialen napad",
     "File '%value%' was not found" => "Datoteke '%value%' ni bilo mogoče najti",
     "Unknown error while uploading file '%value%'" => "Neznana napaka med nalaganjem datoteke '%value%'",

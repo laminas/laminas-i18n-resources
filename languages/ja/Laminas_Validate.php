@@ -171,13 +171,13 @@ return [
     "File is not readable or does not exist" => "ファイルは読み込めないかもしくは存在しません",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "ファイル '%value%' は定義されたiniサイズを越えています",
-    "File '%value%' exceeds the defined form size" => "ファイル '%value%' は定義されたフォームサイズを越えています",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "ファイル '%value%' は定義されたiniサイズを越えています",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "ファイル '%value%' は定義されたフォームサイズを越えています",
     "File '%value%' was only partially uploaded" => "ファイル '%value%' は一部のみアップロードされました",
     "File '%value%' was not uploaded" => "ファイル '%value%' がアップロードされていません",
-    "No temporary directory was found for file '%value%'" => "ファイル '%value%' 用の一時ディレクトリが見つかりませんでした",
-    "File '%value%' can't be written" => "ファイル '%value%' に書き込めませんでした",
-    "A PHP extension returned an error while uploading the file '%value%'" => "ファイル '%value%' をアップロード中にPHPの拡張がモジュールがエラーを返しました",
+    "Missing a temporary folder to store '%value%'" => "ファイル '%value%' 用の一時ディレクトリが見つかりませんでした",
+    "Failed to write file '%value%' to disk" => "ファイル '%value%' に書き込めませんでした",
+    "A PHP extension stopped uploading the file '%value%'" => "ファイル '%value%' をアップロード中にPHPの拡張がモジュールがエラーを返しました",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "ファイル '%value%' は不当にアップロードされました。攻撃の可能性があります",
     "File '%value%' was not found" => "ファイル '%value%' は見つかりませんでした",
     "Unknown error while uploading file '%value%'" => "ファイル '%value%' をアップロード中に不明なエラーです",

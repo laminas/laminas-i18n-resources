@@ -171,13 +171,13 @@ return [
     "File is not readable or does not exist" => "Файла не може да бъде прочетен или не съществува",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "Файлът '%value%' надвишава зададения размер в ini файла",
-    "File '%value%' exceeds the defined form size" => "Файлът '%value%' надвишава зададения във формата размер",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Файлът '%value%' надвишава зададения размер в ini файла",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Файлът '%value%' надвишава зададения във формата размер",
     "File '%value%' was only partially uploaded" => "Файлът '%value%' беше качен само частично",
     "File '%value%' was not uploaded" => "Файлът '%value%' не беше качен",
-    "No temporary directory was found for file '%value%'" => "Не беше открита временна директория за файла '%value%'",
-    "File '%value%' can't be written" => "Файлът '%value%' не може да бъде записан",
-    "A PHP extension returned an error while uploading the file '%value%'" => "PHP изключение беше върнато по време на качването на файла '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Не беше открита временна директория за файла '%value%'",
+    "Failed to write file '%value%' to disk" => "Файлът '%value%' не може да бъде записан",
+    "A PHP extension stopped uploading the file '%value%'" => "PHP изключение беше върнато по време на качването на файла '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Файлът '%value%' беше качен без позволение. Това може да бъде потенциална атака",
     "File '%value%' was not found" => "Файлът '%value%' не беше открит",
     "Unknown error while uploading file '%value%'" => "Възникна грешка при качването на файла '%value%'",

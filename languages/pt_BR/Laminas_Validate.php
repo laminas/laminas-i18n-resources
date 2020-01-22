@@ -184,13 +184,13 @@ return [
     "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "O arquivo '%value%' excede o tamanho definido na configuração",
-    "File '%value%' exceeds the defined form size" => "O arquivo '%value%' excede o tamanho definido do formulário",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "O arquivo '%value%' excede o tamanho definido na configuração",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "O arquivo '%value%' excede o tamanho definido do formulário",
     "File '%value%' was only partially uploaded" => "O arquivo '%value%' foi apenas parcialmente enviado",
     "File '%value%' was not uploaded" => "O arquivo '%value%' não foi enviado",
-    "No temporary directory was found for file '%value%'" => "Nenhum diretório temporário foi encontrado para o arquivo '%value%'",
-    "File '%value%' can't be written" => "O arquivo '%value%' não pôde ser escrito",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Uma extensão do PHP retornou um erro enquanto o arquivo '%value%' era enviado",
+    "Missing a temporary folder to store '%value%'" => "Nenhum diretório temporário foi encontrado para o arquivo '%value%'",
+    "Failed to write file '%value%' to disk" => "O arquivo '%value%' não pôde ser escrito",
+    "A PHP extension stopped uploading the file '%value%'" => "Uma extensão do PHP retornou um erro enquanto o arquivo '%value%' era enviado",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "O arquivo '%value%' foi enviado ilegalmente. Isto poderia ser um possível ataque",
     "File '%value%' was not found" => "O arquivo '%value%' não foi encontrado",
     "Unknown error while uploading file '%value%'" => "Erro desconhecido ao enviar o arquivo '%value%'",

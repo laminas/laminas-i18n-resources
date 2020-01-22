@@ -179,13 +179,13 @@ return [
     "File is not readable or does not exist" => "L'arxiu no és pot llegir o no existeix",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "L'arxiu '%value%' supera la mida definida inicialment",
-    "File '%value%' exceeds the defined form size" => "L'arxiu '%value%' supera la mida definida en el formulari",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "L'arxiu '%value%' supera la mida definida inicialment",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "L'arxiu '%value%' supera la mida definida en el formulari",
     "File '%value%' was only partially uploaded" => "L'arxiu '%value%' s'ha carregat parcialment",
     "File '%value%' was not uploaded" => "L'arxiu '%value%' no s'ha carregat",
-    "No temporary directory was found for file '%value%'" => "No s'ha trobat cap directory temporal per al fitxer '%value%'",
-    "File '%value%' can't be written" => "L'arxiu '%value%' no és pot escriure",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Una extensió PHP ha retornat un error al pujar l'arxiu '%value%'",
+    "Missing a temporary folder to store '%value%'" => "No s'ha trobat cap directory temporal per al fitxer '%value%'",
+    "Failed to write file '%value%' to disk" => "L'arxiu '%value%' no és pot escriure",
+    "A PHP extension stopped uploading the file '%value%'" => "Una extensió PHP ha retornat un error al pujar l'arxiu '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "L'arxiu '%value%' s'ha carregat il·legalment. Això podria ser un possible atac",
     "File '%value%' was not found" => "L'arxiu '%value%' no s'ha trobat",
     "Unknown error while uploading file '%value%'" => "Error desconegut en pujar l'arxiu '%value%'",
