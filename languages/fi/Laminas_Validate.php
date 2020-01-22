@@ -178,6 +178,18 @@ return [
     "File '%value%' was not found" => "Tiedostoa '%value%' ei löydy",
     "Unknown error while uploading file '%value%'" => "Tiedoston '%value%' lähetyksessä tapahtui tunnistamaton virhe",
 
+    // Laminas\Validator\File\UploadFile
+    "The uploaded file exceeds the upload_max_filesize directive in php.ini" => "Tiedosto ylittää ini-tiedostossa määritellyn tiedostokoon",
+    "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Tiedosto ylittää lomakkeessa määritellyn tiedostokoon",
+    "The uploaded file was only partially uploaded" => "Tiedosto vastaanotettiin ainoastaan osittain",
+    "No file was uploaded" => "Tiedostoa ei lähetetty",
+    "Missing a temporary folder" => "Väliaikaishakemistoa ei löytynyt tiedostolle",
+    "Failed to write file to disk" => "Tiedostoon ei voida kirjoittaa",
+    "A PHP extension stopped the file upload" => "PHP:n lisäosa palautti virheen kesken tiedoston lähetyksen",
+    "File was illegally uploaded. This could be a possible attack" => "Tiedoston lähetyksessä haivattu laittomuus, mahdollinen hyökkäys",
+    "File was not found" => "Tiedostoa ei löydy",
+    "Unknown error while uploading file" => "Tiedoston lähetyksessä tapahtui tunnistamaton virhe",
+
     // Laminas\Validator\File\WordCount
     "Too many words, maximum '%max%' are allowed but '%count%' were counted" => "Virheellinen määrä sanoja, maksimäärä on '%max%', annettu '%count%'",
     "Too few words, minimum '%min%' are expected but '%count%' were counted" => "Virheellinen määrä sanoja, minimimäärä on '%min%', annettu '%count%'",
