@@ -58,6 +58,8 @@ return [
     // Laminas\Validator\Between
     "The input is not between '%min%' and '%max%', inclusively" => "The input is not between '%min%' and '%max%', inclusively",
     "The input is not strictly between '%min%' and '%max%'" => "The input is not strictly between '%min%' and '%max%'",
+    "The min ('%min%') and max ('%max%') values are numeric, but the input is not" => "The min ('%min%') and max ('%max%') values are numeric, but the input is not",
+    "The min ('%min%') and max ('%max%') values are non-numeric strings, but the input is not a string" => "The min ('%min%') and max ('%max%') values are non-numeric strings, but the input is not a string",
 
     // Laminas\Validator\Bitwise
     "The input has no common bit set with '%control%'" => "The input has no common bit set with '%control%'",
