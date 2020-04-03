@@ -245,7 +245,7 @@
 <p>To use the resources laminas-i18n-resources exposes, retrieve them from the
 <code>Laminas\I18n\Translator\Resources</code> class and pass them to
 <code>Laminas\I18n\Translator\Translator::addTranslationFilePattern()</code>:</p>
-<pre class=codehilite><code class=language-php>use Laminas\I18n\Translator\Resources;
+<pre class="highlight"><code class="language-php">use Laminas\I18n\Translator\Resources;
 use Laminas\I18n\Translator\Translator;
 
 $translator = new Translator();
@@ -256,20 +256,22 @@ $translator-&gt;addTranslationFilePattern(
 );
 
 echo $translator-&gt;translate('Invalid type given. String expected', 'default', 'es');</code></pre>
+
 <p>You can also use the <code>getPatternForCaptcha()</code> method to setup translation messages for
 <code>laminas-captcha</code>:</p>
-<pre class=codehilite><code class=language-php>$translator-&gt;addTranslationFilePattern(
+<pre class="highlight"><code class="language-php">$translator-&gt;addTranslationFilePattern(
     'phpArray',
     Resources::getBasePath(),
     Resources::getPatternForCaptcha()
 );</code></pre>
+
 <h2 id="automating-resource-injection">Automating resource injection</h2>
 <p>If you are fetching <code>Laminas\I18n\Translator\Translator</code> via <code>laminas-servicemanager</code>,
 you may want to automate injecting the translation messages. This can be done
 using <code>laminas-servicemanager</code>'s
 <a href="https://docs.laminas.dev/laminas-servicemanager/delegators/">delegator factories</a>.</p>
 <p>As an example, consider the following delegator factory:</p>
-<pre class=codehilite><code class=language-php>use Interop\Container\ContainerInterface;
+<pre class="highlight"><code class="language-php">use Interop\Container\ContainerInterface;
 use Laminas\I18n\Translator\Resources;
 use Laminas\ServiceManager\DelegatorFactoryInterface;
 use Laminas\ServiceManager\ServiceLocatorInterface;
@@ -307,6 +309,7 @@ class TranslatorDelegator implements DelegatorFactoryInterface
         return $this($container, $requestedName, $callback);
     }
 }</code></pre>
+
 <blockquote>
 <h3>Forwards compatibility</h3>
 <p>The above definition will work with both laminas-servicemanager v2 and v3
@@ -314,7 +317,7 @@ releases. If you are targeting only v3 and up, you can remove the
 <code>createDelegatorWithName()</code> implementation.</p>
 </blockquote>
 <p>You would then register this in your configuration:</p>
-<pre class=codehilite><code class=language-php>return [
+<pre class="highlight"><code class="language-php">return [
     'service_manager' =&gt; [
         'delegators' =&gt; [
             'MvcTranslator' =&gt; [
