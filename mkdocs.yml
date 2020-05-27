@@ -2,7 +2,7 @@ docs_dir: docs/book
 site_dir: docs/html
 nav:
     - Home: index.md
-    - Usage: usage.md
+    - 'Basic Usage': usage.md
 site_name: laminas-i18n-resources
 site_description: "Provides validator and captcha translations for laminas-i18n's Translator"
 repo_url: 'https://github.com/laminas/laminas-i18n-resources'

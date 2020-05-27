@@ -1,4 +1,4 @@
-# Usage
+# Basic Usage
 
 To use the resources laminas-i18n-resources exposes, retrieve them from the
 `Laminas\I18n\Translator\Resources` class and pass them to
