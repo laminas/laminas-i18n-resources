@@ -164,13 +164,13 @@ return [
     "File '%value%' is not readable or does not exist" => "'%value%' dosyası okunamıyor ya da yok",
 
     // Laminas_Validator_File_Upload
-    "File '%value%' exceeds the defined ini size" => "'%value%' dosyası tanımlanan ini boyutunu aşıyor",
-    "File '%value%' exceeds the defined form size" => "'%value%' dosyası tanımlanan form boyutunu aşıyor",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "'%value%' dosyası tanımlanan ini boyutunu aşıyor",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "'%value%' dosyası tanımlanan form boyutunu aşıyor",
     "File '%value%' was only partially uploaded" => "'%value%' dosyası kısmen yüklenmiştir",
     "File '%value%' was not uploaded" => "'%value%' dosyası yüklenemedi",
-    "No temporary directory was found for file '%value%'" => "Geçici dizin '%value%' dosyası için bulunamamıştır",
-    "File '%value%' can't be written" => "'%value%' dosyasına yazılamıyor",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Bir PHP uzantısı '%value%' dosyasını yüklerken bir hata verdi",
+    "Missing a temporary folder to store '%value%'" => "Geçici dizin '%value%' dosyası için bulunamamıştır",
+    "Failed to write file '%value%' to disk" => "'%value%' dosyasına yazılamıyor",
+    "A PHP extension stopped uploading the file '%value%'" => "Bir PHP uzantısı '%value%' dosyasını yüklerken bir hata verdi",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "'%value%' dosyası yasadışı bir biçimde yüklendi. Bu olası bir saldırı olabilir",
     "File '%value%' was not found" => "'%value%' dosyası bulunamadı",
     "Unknown error while uploading file '%value%'" => "'%value%' dosyasını yüklerken bilinmeyen bir hata ile karşılaşıldı",

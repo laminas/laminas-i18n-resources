@@ -150,13 +150,13 @@ return [
     "File '%value%' could not be found" => "Fajl '%value%' ne može biti pronađen",
 
     // Laminas_Validate_File_Upload
-    "File '%value%' exceeds the defined ini size" => "Fajl '%value%' prevazilazi maksimalnu dozvoljenu veličinu",
-    "File '%value%' exceeds the defined form size" => "Fajl '%value%' prevazilazi maksimalnu dozvoljenu veličinu",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Fajl '%value%' prevazilazi maksimalnu dozvoljenu veličinu",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Fajl '%value%' prevazilazi maksimalnu dozvoljenu veličinu",
     "File '%value%' was only partially uploaded" => "Fajl '%value%' je samo parcijalno uploadovan",
     "File '%value%' was not uploaded" => "Fajl '%value%' nije uploadovan",
-    "No temporary directory was found for file '%value%'" => "Privremeni direktorijum nije pronađen za fajl '%value%'",
-    "File '%value%' can't be written" => "Fajl '%value%' ne može biti izmenjen",
-    "A PHP extension returned an error while uploading the file '%value%'" => "Ekstenzija je vratila grešku tokom uploada fajla '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Privremeni direktorijum nije pronađen za fajl '%value%'",
+    "Failed to write file '%value%' to disk" => "Fajl '%value%' ne može biti izmenjen",
+    "A PHP extension stopped uploading the file '%value%'" => "Ekstenzija je vratila grešku tokom uploada fajla '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Fajl '%value%' je ilegalno uploadovan, moguć napad",
     "File '%value%' was not found" => "Fajl '%value%' nije pronađen",
     "Unknown error while uploading file '%value%'" => "Nepoznata greška pri uploadu fajla '%value%'",

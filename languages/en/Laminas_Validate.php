@@ -37,6 +37,7 @@ return [
     // Laminas\I18n\Validator\IsInt
     "Invalid type given. String or integer expected" => "Invalid type given. String or integer expected",
     "The input does not appear to be an integer" => "The input does not appear to be an integer",
+    "The input is not strictly an integer" => "The input is not strictly an integer",
 
     // Laminas\I18n\Validator\PhoneNumber
     "The input does not match a phone number format" => "The input does not match a phone number format",
@@ -57,6 +58,8 @@ return [
     // Laminas\Validator\Between
     "The input is not between '%min%' and '%max%', inclusively" => "The input is not between '%min%' and '%max%', inclusively",
     "The input is not strictly between '%min%' and '%max%'" => "The input is not strictly between '%min%' and '%max%'",
+    "The min ('%min%') and max ('%max%') values are numeric, but the input is not" => "The min ('%min%') and max ('%max%') values are numeric, but the input is not",
+    "The min ('%min%') and max ('%max%') values are non-numeric strings, but the input is not a string" => "The min ('%min%') and max ('%max%') values are non-numeric strings, but the input is not a string",
 
     // Laminas\Validator\Bitwise
     "The input has no common bit set with '%control%'" => "The input has no common bit set with '%control%'",
@@ -185,25 +188,25 @@ return [
     "File is not readable or does not exist" => "File is not readable or does not exist",
 
     // Laminas\Validator\File\Upload
-    "File '%value%' exceeds the defined ini size" => "File '%value%' exceeds the defined ini size",
-    "File '%value%' exceeds the defined form size" => "File '%value%' exceeds the defined form size",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "File '%value%' exceeds upload_max_filesize directive in php.ini",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form",
     "File '%value%' was only partially uploaded" => "File '%value%' was only partially uploaded",
     "File '%value%' was not uploaded" => "File '%value%' was not uploaded",
-    "No temporary directory was found for file '%value%'" => "No temporary directory was found for file '%value%'",
-    "File '%value%' can't be written" => "File '%value%' can't be written",
-    "A PHP extension returned an error while uploading the file '%value%'" => "A PHP extension returned an error while uploading the file '%value%'",
+    "Missing a temporary folder to store '%value%'" => "Missing a temporary folder to store '%value%'",
+    "Failed to write file '%value%' to disk" => "Failed to write file '%value%' to disk",
+    "A PHP extension stopped uploading the file '%value%'" => "A PHP extension stopped uploading the file '%value%'",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "File '%value%' was illegally uploaded. This could be a possible attack",
     "File '%value%' was not found" => "File '%value%' was not found",
     "Unknown error while uploading file '%value%'" => "Unknown error while uploading file '%value%'",
 
     // Laminas\Validator\File\UploadFile
-    "File exceeds the defined ini size" => "File exceeds the defined ini size",
-    "File exceeds the defined form size" => "File exceeds the defined form size",
-    "File was only partially uploaded" => "File was only partially uploaded",
-    "File was not uploaded" => "File was not uploaded",
-    "No temporary directory was found for file" => "No temporary directory was found for file",
-    "File can't be written" => "File can't be written",
-    "A PHP extension returned an error while uploading the file" => "A PHP extension returned an error while uploading the file",
+    "The uploaded file exceeds the upload_max_filesize directive in php.ini" => "The uploaded file exceeds the upload_max_filesize directive in php.ini",
+    "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form",
+    "The uploaded file was only partially uploaded" => "The uploaded file was only partially uploaded",
+    "No file was uploaded" => "No file was uploaded",
+    "Missing a temporary folder" => "Missing a temporary folder",
+    "Failed to write file to disk" => "Failed to write file to disk",
+    "A PHP extension stopped the file upload" => "A PHP extension stopped the file upload",
     "File was illegally uploaded. This could be a possible attack" => "File was illegally uploaded. This could be a possible attack",
     "File was not found" => "File was not found",
     "Unknown error while uploading file" => "Unknown error while uploading file",

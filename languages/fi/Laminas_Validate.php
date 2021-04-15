@@ -7,245 +7,276 @@
  */
 
 /**
- * EN-Revision: 22075
+ * EN-Revision: 16.Jun.2015
  */
 return [
-    // Laminas_Validate_Alnum
+    // Laminas\I18n\Validator\Alnum
     "Invalid type given. String, integer or float expected" => "Epäkelpo syöte. Pitäisi olla liukuluku, merkkijono tai kokonaisluku",
-    "'%value%' contains characters which are non alphabetic and no digits" => "'%value%' on virheelinen, ainoastaan aakkoset ja numerot ovat sallittuja",
-    "'%value%' is an empty string" => "'%value%' on tyhjä merkkijono",
+    "The input contains characters which are non alphabetic and no digits" => "Syöte on virheellinen, ainoastaan aakkoset ja numerot ovat sallittuja",
+    "The input is an empty string" => "Syöte on tyhjä merkkijono",
 
-    // Laminas_Validate_Alpha
+    // Laminas\I18n\Validator\Alpha
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
-    "'%value%' contains non alphabetic characters" => "'%value%' on virheellinen, ainoastaan aakkoset ovat sallittuja",
-    "'%value%' is an empty string" => "'%value%' on tyhjä merkkijono",
+    "The input contains non alphabetic characters" => "Syöte on virheellinen, ainoastaan aakkoset ovat sallittuja",
+    "The input is an empty string" => "Syöte on tyhjä merkkijono",
 
-    // Laminas_Validate_Barcode
-    "'%value%' failed checksum validation" => "Syötteen '%value%' tarkistusluvun vahvistus epäonnistui",
-    "'%value%' contains invalid characters" => "'%value%' sisältää epäkelpoja merkkejä",
-    "'%value%' should have a length of %length% characters" => "'%value%' pitäisi olla %length% merkkiä pitkä",
+    // Laminas\I18n\Validator\DateTime
+    "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
+    "The input does not appear to be a valid datetime" => "Syöte ei sisällä kelvollista päivämäärää ja aikaa",
+
+    // Laminas\I18n\Validator\IsFloat
+    "Invalid type given. String, integer or float expected" => "Epäkelpo syöte. Pitäisi olla liukuluku, merkkijono tai kokonaisluku",
+    "The input does not appear to be a float" => "Syöte ei ole liukuluku",
+
+    // Laminas\I18n\Validator\IsInt
+    "Invalid type given. String or integer expected" => "Epäkelpo syöte. Pitäisi olla merkkijono tai kokonaisluku",
+    "The input does not appear to be an integer" => "Syöte ei ole kokonaisluku",
+
+    // Laminas\I18n\Validator\PhoneNumber
+    "The input does not match a phone number format" => "Syöte ei ole puhelinnumeron muotoinen",
+    "The country provided is currently unsupported" => "Annettu maa ei ole tuettu",
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
 
-    // Laminas_Validate_Between
-    "'%value%' is not between '%min%' and '%max%', inclusively" => "'%value%' ei ole luku väliltä %min%-%max%",
-    "'%value%' is not strictly between '%min%' and '%max%'" => "'%value%' ei ole luku väliltä %min%-%max%, poislukien ylä- ja alarajat",
+    // Laminas\I18n\Validator\PostCode
+    "Invalid type given. String or integer expected" => "Epäkelpo syöte. Pitäisi olla merkkijono tai kokonaisluku",
+    "The input does not appear to be a postal code" => "Syöte ei ole käypä postiosoite",
+    "An exception has been raised while validating the input" => "Syötettä tarkistettaessa tapahtui odottamaton virhe",
 
-    // Laminas_Validate_Callback
-    "'%value%' is not valid" => "'%value%' on epäkelpo",
+    // Laminas\Validator\Barcode
+    "The input failed checksum validation" => "Syötteen tarkistusluku on väärä",
+    "The input contains invalid characters" => "Syöte sisältää epäkelpoja merkkejä",
+    "The input should have a length of %length% characters" => "Syötteen pitäisi olla %length% merkkiä pitkä",
+    "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
+
+    // Laminas\Validator\Between
+    "The input is not between '%min%' and '%max%', inclusively" => "Syöte ei ole luku väliltä %min%-%max%",
+    "The input is not strictly between '%min%' and '%max%'" => "Syöte ei ole luku väliltä %min%-%max%, poislukien ylä- ja alarajat",
+
+    // Laminas\Validator\Callback
+    "The input is not valid" => "Syöte on epäkelpo",
     "An exception has been raised within the callback" => "Odottamaton virhe, callback-validaattori palautti poikkeuksen",
 
-    // Laminas_Validate_Ccnum
-    "'%value%' must contain between 13 and 19 digits" => "'%value%' pitää olla luku väliltä 13-19",
-    "Luhn algorithm (mod-10 checksum) failed on '%value%'" => "Luhn-algoritmin (mod 10) suoritus syötteelle '%value%' epäonnistui",
-
-    // Laminas_Validate_CreditCard
-    "'%value%' seems to contain an invalid checksum" => "Syötteen '%value%' tarkistusluku on viallinen",
-    "'%value%' must contain only digits" => "'%value%' saa sisältää ainoastaan numeroita",
+    // Laminas\Validator\CreditCard
+    "The input seems to contain an invalid checksum" => "Syötteen tarkistusluku on viallinen",
+    "The input must contain only digits" => "Syöte saa sisältää ainoastaan numeroita",
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
-    "'%value%' contains an invalid amount of digits" => "'%value%' sisältää väärän määrän numeroita",
-    "'%value%' is not from an allowed institute" => "'%value%' ei ole sallitun luottolaitoksen alkuosa",
-    "'%value%' seems to be an invalid creditcard number" => "Luottokortin numero '%value%' tulkittiin virheelliseksi",
-    "An exception has been raised while validating '%value%'" => "Kortin '%value%' varmennus epäonnistui, palvelu palautti virheen",
+    "The input contains an invalid amount of digits" => "Syöte sisältää väärän määrän numeroita",
+    "The input is not from an allowed institute" => "Syöte ei ole sallitun luottolaitoksen alkuosa",
+    "The input seems to be an invalid credit card number" => "Luottokortin numero tulkittiin virheelliseksi",
+    "An exception has been raised while validating the input" => "Syötettä tarkistettaessa tapahtui odottamaton virhe",
 
-    // Laminas_Validate_Date
-    "Invalid type given. String, integer, array or Laminas_Date expected" => "Epäkelpo syöte. Pitäisi olla merkkijono, kokonaisluku, taulukko tai Laminas_Date",
-    "'%value%' does not appear to be a valid date" => "'%value%' ei ole kelvollinen päivä",
-    "'%value%' does not fit the date format '%format%'" => "'%value%' ei ole muotoa '%format%'",
+    // Laminas\Validator\Csrf
+    "The form submitted did not originate from the expected site" => "Lomake ei ole peräisin odotetulta sivustolta",
 
-    // Laminas_Validate_Db_Abstract
-    "No record matching '%value%' was found" => "Rekisteristä ei löytynyt arvoa, joka vastaisi syötettä '%value%'",
-    "A record matching '%value%' was found" => "Rekisteristä löytyi syötettä '%value%' vastaava arvo",
+    // Laminas\Validator\Date
+    "Invalid type given. String, integer, array or DateTime expected" => "Epäkelpo syöte. Pitäisi olla merkkijono, kokonaisluku, taulukko tai DateTime",
+    "The input does not appear to be a valid date" => "Syöte ei ole kelvollinen päivämäärä",
+    "The input does not fit the date format '%format%'" => "Syöte ei ole muotoa '%format%'",
 
-    // Laminas_Validate_Digits
+    // Laminas\Validator\Db\AbstractDb
+    "No record matching the input was found" => "Rekisteristä ei löytynyt arvoa, joka vastaisi syötettä",
+    "A record matching the input was found" => "Rekisteristä löytyi syötettä vastaava arvo",
+
+    // Laminas\Validator\Digits
     "Invalid type given. String, integer or float expected" => "Epäkelpo syöte. Pitäisi olla merkkijono, kokonaisluku tai liukuluku",
-    "'%value%' must contain only digits" => "'%value%' on virheellinen, ainoastaan numerot ovat sallittuja",
-    "'%value%' is an empty string" => "'%value%' on tyhjä merkkijono",
+    "The input must contain only digits" => "Syöte on virheellinen, ainoastaan numerot ovat sallittuja",
+    "The input is an empty string" => "Syöte on tyhjä merkkijono",
 
-    // Laminas_Validate_EmailAddress
+    // Laminas\Validator\EmailAddress
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
-    "'%value%' is not a valid email address in the basic format local-part@hostname" => "'%value%' on virheellinen sähköpostiosoite, ei vastaa muotoa paikallisosa@alue",
-    "'%hostname%' is not a valid hostname for email address '%value%'" => "'%hostname%' on virheellinen verkkotunnus osoitteelle '%value%'",
-    "'%hostname%' does not appear to have a valid MX record for the email address '%value%'" => "Osoitteen '%value%' verkkotunnukselle '%hostname%' ei löydy MX-tietuetta",
-    "'%hostname%' is not in a routable network segment. The email address '%value%' should not be resolved from public network" => "'%hostname%' ei ole reititettävän verkon osa. Sähköpostiosoitetta '%value%' ei pitäisi selvittää julkisesta verkosta.",
+    "The input is not a valid email address. Use the basic format local-part@hostname" => "Syöte on virheellinen sähköpostiosoite, ei vastaa muotoa paikallisosa@alue",
+    "'%hostname%' is not a valid hostname for the email address" => "'%hostname%' on virheellinen verkkotunnus sähköpostiosoitteelle",
+    "'%hostname%' does not appear to have any valid MX or A records for the email address" => "Sähköpostiosoitteen verkkotunnukselle '%hostname%' ei löydy MX- tai A-tietuetta",
+    "'%hostname%' is not in a routable network segment. The email address should not be resolved from public network" => "'%hostname%' ei ole reititettävän verkon osa. Sähköpostiosoitetta ei pitäisi selvittää julkisesta verkosta",
     "'%localPart%' can not be matched against dot-atom format" => "Virheellinen paikallisosa, '%localPart%' ei ole verrattavissa dot-atom -muotoon",
     "'%localPart%' can not be matched against quoted-string format" => "Virheellinen paikallisosa, '%localPart%' ei ole verrattavissa quoted-string -muotoon",
-    "'%localPart%' is not a valid local part for email address '%value%'" => "Sähköpostiosoitteen '%value%' paikallisosa '%localPart%' on virheellinen",
-    "'%value%' exceeds the allowed length" => "Osoite '%value%' on liian pitkä",
+    "'%localPart%' is not a valid local part for the email address" => "Sähköpostiosoitteen paikallisosa '%localPart%' on virheellinen",
+    "The input exceeds the allowed length" => "Syöte on liian pitkä",
 
-    // Laminas_Validate_File_Count
+    // Laminas\Validator\File\Count
     "Too many files, maximum '%max%' are allowed but '%count%' are given" => "Virheellinen määrä tiedostoja, maksimimäärä on '%max%', vastaanotettiin '%count%'",
     "Too few files, minimum '%min%' are expected but '%count%' are given" => "Virheellinen määrä tiedostoja, minimimäärä on '%min%', vastaanotettiin '%count%'",
 
-    // Laminas_Validate_File_Crc32
-    "File '%value%' does not match the given crc32 hashes" => "Tiedoston '%value%' crc32-tarkistusluku ei vastaa annettua",
+    // Laminas\Validator\File\Crc32
+    "File does not match the given crc32 hashes" => "Tiedoston crc32-tarkistusluku ei vastaa annettua",
     "A crc32 hash could not be evaluated for the given file" => "Tarkistuslukua crc32 ei pystytty määrittämään vastaanotetulle tiedostolle",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_ExcludeExtension
-    "File '%value%' has a false extension" => "Tiedostolla '%value%' on virheellinen pääte",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    // Laminas\Validator\File\ExcludeExtension
+    "File has an incorrect extension" => "Tiedostolla on virheellinen pääte",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_ExcludeMimeType
-    "File '%value%' has a false mimetype of '%type%'" => "Tiedoston '%value%' MIME-tyyppi '%type%' on virheellinen",
-    "The mimetype of file '%value%' could not be detected" => "Tiedoston '%value%' MIME-tyyppiä ei pystytty todentamaan",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    // Laminas\Validator\File\Exists
+    "File does not exist" => "Tiedostoa ei ole olemassa",
 
-    // Laminas_Validate_File_Exists
-    "File '%value%' does not exist" => "Tiedostoa '%value%' ei ole olemassa",
+    // Laminas\Validator\File\Extension
+    "File has an incorrect extension" => "Tiedostolla on virheellinen pääte",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_Extension
-    "File '%value%' has a false extension" => "Tiedostolla '%value%' on virheellinen pääte",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
-
-    // Laminas_Validate_File_FilesSize
+    // Laminas\Validator\File\FilesSize
     "All files in sum should have a maximum size of '%max%' but '%size%' were detected" => "Kaikkien tiedostojen yhteenlaskettu koko saa olla maksimissaan '%max%', vastaanotettiin '%size%'",
     "All files in sum should have a minimum size of '%min%' but '%size%' were detected" => "Kaikkien tiedostojen yhteenlaskettu koko pitää olla vähintään '%min%', vastaanotettiin '%size%'",
     "One or more files can not be read" => "Yhtä tai useampaa tiedostoa ei voida lukea",
 
-    // Laminas_Validate_File_Hash
-    "File '%value%' does not match the given hashes" => "Tiedoston '%value%' tarkastusluku ei vastaa annettua",
+    // Laminas\Validator\File\Hash
+    "File does not match the given hashes" => "Tiedoston tarkastusluku ei vastaa annettua",
     "A hash could not be evaluated for the given file" => "Tarkistuslukua ei pystytty määrittämään vastaanotetulle tiedostolle",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_ImageSize
-    "Maximum allowed width for image '%value%' should be '%maxwidth%' but '%width%' detected" => "Kuvan '%value%' maksimileveys on '%maxwidth%', annettu '%width%'",
-    "Minimum expected width for image '%value%' should be '%minwidth%' but '%width%' detected" => "Kuvan '%value%' minimileveys on '%minwidth%', annettu '%width%'",
-    "Maximum allowed height for image '%value%' should be '%maxheight%' but '%height%' detected" => "Kuvan '%value%' maksimikorkeus on '%maxheight%', annettu '%height%'",
-    "Minimum expected height for image '%value%' should be '%minheight%' but '%height%' detected" => "Kuvan '%value%' minimikorkeus on '%minheight%', annettu '%height%'",
-    "The size of image '%value%' could not be detected" => "Kuvan '%value%' kokoa ei voida todentaa",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    // Laminas\Validator\File\ImageSize
+    "Maximum allowed width for image should be '%maxwidth%' but '%width%' detected" => "Kuvan maksimileveys on '%maxwidth%', annettu '%width%'",
+    "Minimum expected width for image should be '%minwidth%' but '%width%' detected" => "Kuvan minimileveys on '%minwidth%', annettu '%width%'",
+    "Maximum allowed height for image should be '%maxheight%' but '%height%' detected" => "Kuvan maksimikorkeus on '%maxheight%', annettu '%height%'",
+    "Minimum expected height for image should be '%minheight%' but '%height%' detected" => "Kuvan minimikorkeus on '%minheight%', annettu '%height%'",
+    "The size of image could not be detected" => "Kuvan kokoa ei voitu määrittää",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_IsCompressed
-    "File '%value%' is not compressed, '%type%' detected" => "Tiedosto '%value%' ei ole pakattu, vastaanotettiin tyyppiä '%type%'",
-    "The mimetype of file '%value%' could not be detected" => "Tiedoston '%value%' MIME-tyyppiä ei pystytty todentamaan",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    // Laminas\Validator\File\IsCompressed
+    "File is not compressed, '%type%' detected" => "Tiedosto ei ole pakattu, vastaanotettiin tyyppiä '%type%'",
+    "The mimetype could not be detected from the file" => "Tiedoston MIME-tyyppiä ei pystytty määrittämään",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_IsImage
-    "File '%value%' is no image, '%type%' detected" => "Tiedosto '%value%' ei ole kuvatiedosto, vastaanotettiin tyyppiä '%type%'",
-    "The mimetype of file '%value%' could not be detected" => "Tiedoston '%value%' MIME-tyyppiä ei pystytty todentamaan",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    // Laminas\Validator\File\IsImage
+    "File is no image, '%type%' detected" => "Tiedosto ei ole kuvatiedosto, vastaanotettiin tyyppiä '%type%'",
+    "The mimetype could not be detected from the file" => "Tiedoston MIME-tyyppiä ei pystytty määrittämään",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_Md5
-    "File '%value%' does not match the given md5 hashes" => "Tiedoston '%value%' tarkistusluku ei vastaa annettua (md5)",
-    "A md5 hash could not be evaluated for the given file" => "Tiedostolle ei voitu määrittää md5-tarkistuslukua",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    // Laminas\Validator\File\Md5
+    "File does not match the given md5 hashes" => "Tiedoston md5-tarkistusluku ei vastaa annettua",
+    "An md5 hash could not be evaluated for the given file" => "Tiedostolle ei voitu laskea md5-tarkistuslukua",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_MimeType
-    "File '%value%' has a false mimetype of '%type%'" => "Tiedoston '%value%' MIME-tyyppi '%type%' on virheellinen",
-    "The mimetype of file '%value%' could not be detected" => "Tiedoston '%value%' MIME-tyyppiä ei pystytty todentamaan",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    // Laminas\Validator\File\MimeType
+    "File has an incorrect mimetype of '%type%'" => "Tiedoston MIME-tyyppi '%type%' on virheellinen",
+    "The mimetype could not be detected from the file" => "Tiedoston MIME-tyyppiä ei pystytty määrittämään",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_NotExists
-    "File '%value%' exists" => "Tiedostoa '%value%' ei ole olemassa",
+    // Laminas\Validator\File\NotExists
+    "File exists" => "Tiedosto on olemassa",
 
-    // Laminas_Validate_File_Sha1
-    "File '%value%' does not match the given sha1 hashes" => "Tiedoston '%value%' tarkistusluku ei vastaa annettua (sha1)",
-    "A sha1 hash could not be evaluated for the given file" => "Tiedostolle ei voitu määrittää sha1-tarkistuslukua",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    // Laminas\Validator\File\Sha1
+    "File does not match the given sha1 hashes" => "Tiedoston sha1-tarkistusluku ei vastaa annettua",
+    "A sha1 hash could not be evaluated for the given file" => "Tiedostolle ei voitu laskea sha1-tarkistuslukua",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_Size
-    "Maximum allowed size for file '%value%' is '%max%' but '%size%' detected" => "Tiedoston '%value%' maksimikoko on '%max%', vastaanotettu '%size%'",
-    "Minimum expected size for file '%value%' is '%min%' but '%size%' detected" => "Tiedoston '%value%' minimikoko on '%min%', vastaanotettu '%size%'",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voidea lukea tai sitä ei ole",
+    // Laminas\Validator\File\Size
+    "Maximum allowed size for file is '%max%' but '%size%' detected" => "Tiedoston maksimikoko on '%max%', vastaanotettu '%size%'",
+    "Minimum expected size for file is '%min%' but '%size%' detected" => "Tiedoston minimikoko on '%min%', vastaanotettu '%size%'",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_File_Upload
+    // Laminas\Validator\File\Upload
     "File '%value%' exceeds the defined ini size" => "Tiedosto '%value%' ylittää ini-tiedostossa määritellyn tiedostokoon",
     "File '%value%' exceeds the defined form size" => "Tiedosto '%value%' ylittää lomakkeessa määritellyn tiedostokoon",
+    "File '%value%' exceeds upload_max_filesize directive in php.ini" => "Tiedosto '%value%' ylittää ini-tiedostossa määritellyn tiedostokoon",
+    "File '%value%' exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Tiedosto '%value%' ylittää lomakkeessa määritellyn tiedostokoon",
     "File '%value%' was only partially uploaded" => "Tiedosto '%value%' vastaanotettiin ainoastaan osittain",
     "File '%value%' was not uploaded" => "Tiedostoa '%value%' ei lähetetty",
-    "No temporary directory was found for file '%value%'" => "Väliaikaishakemistoa ei löytynyt tiedostolle '%value%'",
-    "File '%value%' can't be written" => "Tiedostoon '%value%' ei voida kirjoittaa",
-    "A PHP extension returned an error while uploading the file '%value%'" => "PHP:n lisäosa palautti virheen kesken tiedoston '%value%' lähetyksen",
+    "Missing a temporary folder to store '%value%'" => "Väliaikaishakemistoa ei löytynyt tiedostolle '%value%'",
+    "Failed to write file '%value%' to disk" => "Tiedostoon '%value%' ei voida kirjoittaa",
+    "A PHP extension stopped uploading the file '%value%'" => "PHP:n lisäosa palautti virheen kesken tiedoston '%value%' lähetyksen",
     "File '%value%' was illegally uploaded. This could be a possible attack" => "Tiedoston '%value%' lähetyksessä haivattu laittomuus, mahdollinen hyökkäys",
     "File '%value%' was not found" => "Tiedostoa '%value%' ei löydy",
     "Unknown error while uploading file '%value%'" => "Tiedoston '%value%' lähetyksessä tapahtui tunnistamaton virhe",
 
-    // Laminas_Validate_File_WordCount
-    "Too much words, maximum '%max%' are allowed but '%count%' were counted" => "Virheellinen määrä sanoja, maksimäärä on '%max%', annettu '%count%'",
+    // Laminas\Validator\File\UploadFile
+    "The uploaded file exceeds the upload_max_filesize directive in php.ini" => "Tiedosto ylittää ini-tiedostossa määritellyn tiedostokoon",
+    "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form" => "Tiedosto ylittää lomakkeessa määritellyn tiedostokoon",
+    "The uploaded file was only partially uploaded" => "Tiedosto vastaanotettiin ainoastaan osittain",
+    "No file was uploaded" => "Tiedostoa ei lähetetty",
+    "Missing a temporary folder" => "Väliaikaishakemistoa ei löytynyt tiedostolle",
+    "Failed to write file to disk" => "Tiedostoon ei voida kirjoittaa",
+    "A PHP extension stopped the file upload" => "PHP:n lisäosa palautti virheen kesken tiedoston lähetyksen",
+    "File was illegally uploaded. This could be a possible attack" => "Tiedoston lähetyksessä haivattu laittomuus, mahdollinen hyökkäys",
+    "File was not found" => "Tiedostoa ei löydy",
+    "Unknown error while uploading file" => "Tiedoston lähetyksessä tapahtui tunnistamaton virhe",
+
+    // Laminas\Validator\File\WordCount
+    "Too many words, maximum '%max%' are allowed but '%count%' were counted" => "Virheellinen määrä sanoja, maksimäärä on '%max%', annettu '%count%'",
     "Too few words, minimum '%min%' are expected but '%count%' were counted" => "Virheellinen määrä sanoja, minimimäärä on '%min%', annettu '%count%'",
-    "File '%value%' is not readable or does not exist" => "Tiedostoa '%value%' ei voida lukea tai sitä ei ole",
+    "File is not readable or does not exist" => "Tiedostoa ei voida lukea tai sitä ei ole",
 
-    // Laminas_Validate_Float
-    "Invalid type given. String, integer or float expected" => "Epäkelpo syöte. Pitäisi olla liukuluku, merkkijono tai kokonaisluku",
-    "'%value%' does not appear to be a float" => "'%value%' ei ole liukuluku",
+    // Laminas\Validator\GreaterThan
+    "The input is not greater than '%min%'" => "Syöte ei ole suurempi kuin '%min%'",
+    "The input is not greater than or equal to '%min%'" => "Syöte ei ole suurempi tai yhtä suuri kuin '%min%'",
 
-    // Laminas_Validate_GreaterThan
-    "'%value%' is not greater than '%min%'" => "'%value%' ei ole suurempi kuin '%min%'",
-
-    // Laminas_Validate_Hex
+    // Laminas\Validator\Hex
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
-    "'%value%' has not only hexadecimal digit characters" => "'%value%' voi sisältää ainoastaan heksadeslimaalin muotoisia merkkejä",
+    "The input contains non-hexadecimal characters" => "Syöte ei sisällä ainoastaan heksadesimaalin muotoisia merkkejä",
 
-    // Laminas_Validate_Hostname
+    // Laminas\Validator\Hostname
+    "The input appears to be a DNS hostname but the given punycode notation cannot be decoded" => "Verkkotunnuksen punycode-koodauksen purku epäonnistui",
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
-    "'%value%' appears to be an IP address, but IP addresses are not allowed" => "'%value%' näyttäisi olevan ip-osoite eikä verkkotunnus",
-    "'%value%' appears to be a DNS hostname but cannot match TLD against known list" => "'%value%' verkkotunnuksen TLD-osa ei ole tunnettu",
-    "'%value%' appears to be a DNS hostname but contains a dash in an invalid position" => "'%value%' näyttäisi olevan käypä verkkotunnus, mutta sisältää viivan väärässä paikassa",
-    "'%value%' appears to be a DNS hostname but cannot match against hostname schema for TLD '%tld%'" => "'%value%' näyttäisi olevan käypä verkkotunnus, mutta sen TLD-osa '%tld%' on virheellinen",
-    "'%value%' appears to be a DNS hostname but cannot extract TLD part" => "'%value%' verkkotunnuksen TLD-osaa ei pystytty erottamaan",
-    "'%value%' does not match the expected structure for a DNS hostname" => "Verkkotunnus '%value%' on jäsennykseltään virheellinen",
-    "'%value%' does not appear to be a valid local network name" => "'%value%' on epäkelpo paikallisverkkon tunnus",
-    "'%value%' appears to be a local network name but local network names are not allowed" => "'%value%' tulkittiin paikallisverkon tunnukseksi, jotka eivät ole sallittuja",
-    "'%value%' appears to be a DNS hostname but the given punycode notation cannot be decoded" => "Verkkotunnuksen '%value%' punycode-koodauksen purku epäonnistui",
+    "The input appears to be a DNS hostname but contains a dash in an invalid position" => "Verkkotunnus sisältää viivan väärässä paikassa",
+    "The input does not match the expected structure for a DNS hostname" => "Verkkotunnus on jäsennykseltään virheellinen",
+    "The input appears to be a DNS hostname but cannot match against hostname schema for TLD '%tld%'" => "Verkkotunnuksen TLD-osa '%tld%' on virheellinen",
+    "The input does not appear to be a valid local network name" => "Syöte ei ole kelvollinen paikallisverkon tunnus",
+    "The input does not appear to be a valid URI hostname" => "Syöte ei ole kelvollinen URI-verkkotunnus",
+    "The input appears to be an IP address, but IP addresses are not allowed" => "Syöte näyttäisi olevan ip-osoite eikä verkkotunnus",
+    "The input appears to be a local network name but local network names are not allowed" => "Verkkotunnus tulkittiin paikallisverkon tunnukseksi, jotka eivät ole sallittuja",
+    "The input appears to be a DNS hostname but cannot extract TLD part" => "Verkkotunnuksen TLD-osaa ei pystytty erottamaan",
+    "The input appears to be a DNS hostname but cannot match TLD against known list" => "Verkkotunnuksen TLD-osa ei ole tunnettu",
 
-    // Laminas_Validate_Iban
-    "Unknown country within the IBAN '%value%'" => "Maata ei pystytty tunnistamaan IBAN-koodista '%value%'",
-    "'%value%' has a false IBAN format" => "'%value%' on väärän muotoinen IBAN-koodi",
-    "'%value%' has failed the IBAN check" => "'%value%' IBAN-koodin tarkastus epäonnistui",
+    // Laminas\Validator\Iban
+    "Unknown country within the IBAN" => "Maata ei pystytty tunnistamaan IBAN-koodista",
+    "Countries outside the Single Euro Payments Area (SEPA) are not supported" => "SEPA-alueen ulkopuoliset maat eivät ole tuettuja",
+    "The input has a false IBAN format" => "IBAN-koodi on väärän muotoinen",
+    "The input has failed the IBAN check" => "IBAN-koodin tarkastus epäonnistui",
 
-    // Laminas_Validate_Identical
+    // Laminas\Validator\Identical
     "The two given tokens do not match" => "Annetut kaksi arvoa eivät täsmää",
     "No token was provided to match against" => "Toinen arvoista puuttuu",
 
-    // Laminas_Validate_InArray
-    "'%value%' was not found in the haystack" => "'%value%' ei löydy sallittujen syötteiden joukosta",
+    // Laminas\Validator\InArray
+    "The input was not found in the haystack" => "Syötettä ei löydy sallittujen arvojen joukosta",
 
-    // Laminas_Validate_Int
-    "Invalid type given. String or integer expected" => "Epäkelpo syöte. Pitäisi olla merkkijono tai kokonaisluku",
-    "'%value%' does not appear to be an integer" => "'%value%' ei ole kokonaisluku",
-
-    // Laminas_Validate_Ip
+    // Laminas\Validator\Ip
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
-    "'%value%' does not appear to be a valid IP address" => "'%value%' ei ole käypä IP-osoite",
+    "The input does not appear to be a valid IP address" => "Syöte ei ole käypä IP-osoite",
 
-    // Laminas_Validate_Isbn
+    // Laminas\Validator\Isbn
     "Invalid type given. String or integer expected" => "Epäkelpo syöte. Pitäisi olla merkkijono tai kokonaisluku",
-    "'%value%' is not a valid ISBN number" => "'%value%' ei ole käypä ISBN-numero",
+    "The input is not a valid ISBN number" => "Syöte ei ole ISBN-numero",
 
-    // Laminas_Validate_LessThan
-    "'%value%' is not less than '%max%'" => "'%value%' ei ole pienempi kuin '%max%'",
+    // Laminas\Validator\LessThan
+    "The input is not less than '%max%'" => "Syöte ei ole pienempi kuin '%max%'",
+    "The input is not less or equal than '%max%'" => "Syöte ei ole pienempi tai yhtä suuri kuin '%max%'",
 
-    // Laminas_Validate_NotEmpty
-    "Invalid type given. String, integer, float, boolean or array expected" => "Epäkelpo syöte. Pitäisi olla kokonaisluku, liukuluku, boolean tai taulukko",
+    // Laminas\Validator\NotEmpty
     "Value is required and can't be empty" => "Kenttä ei voi olla tyhjä",
+    "Invalid type given. String, integer, float, boolean or array expected" => "Epäkelpo syöte. Pitäisi olla kokonaisluku, liukuluku, boolean tai taulukko",
 
-    // Laminas_Validate_PostCode
-    "Invalid type given. String or integer expected" => "Epäkelpo syöte. Pitäisi olla merkkijono tai kokonaisluku",
-    "'%value%' does not appear to be a postal code" => "'%value%' ei ole käypä postiosoite",
-
-    // Laminas_Validate_Regex
+    // Laminas\Validator\Regex
     "Invalid type given. String, integer or float expected" => "Epäkelpo syöte. Pitäisi olla merkkijono, kokonaisluku tai liukuluku",
-    "'%value%' does not match against pattern '%pattern%'" => "'%value%' ei ole muotoa '%pattern%'",
+    "The input does not match against pattern '%pattern%'" => "Syöte ei ole muotoa '%pattern%'",
     "There was an internal error while using the pattern '%pattern%'" => "Sisäinen virhe käytettäessa muotoa '%pattern%'",
 
-    // Laminas_Validate_Sitemap_Changefreq
-    "'%value%' is not a valid sitemap changefreq" => "'%value%' ei ole käypä sivukartan muutosnopeus",
+    // Laminas\Validator\Sitemap\Changefreq
+    "The input is not a valid sitemap changefreq" => "Syöte ei ole käypä sivukartan muutosnopeus",
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
 
-    // Laminas_Validate_Sitemap_Lastmod
-    "'%value%' is not a valid sitemap lastmod" => "'%value%' ei ole käypä arvo sivukartan viimeksimuokatuksi arvoksi",
+    // Laminas\Validator\Sitemap\Lastmod
+    "The input is not a valid sitemap lastmod" => "Syöte ei ole käypä arvo sivukartan viimeksimuokatuksi arvoksi",
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
 
-    // Laminas_Validate_Sitemap_Loc
-    "'%value%' is not a valid sitemap location" => "'%value%' ei ole käypä sivukartan sijainti",
+    // Laminas\Validator\Sitemap\Loc
+    "The input is not a valid sitemap location" => "Syöte ei ole käypä sivukartan sijainti",
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
 
-    // Laminas_Validate_Sitemap_Priority
-    "'%value%' is not a valid sitemap priority" => "'%value%' ei ole käypä sivukartan prioriteetti",
+    // Laminas\Validator\Sitemap\Priority
+    "The input is not a valid sitemap priority" => "Syöte ei ole käypä sivukartan prioriteetti",
     "Invalid type given. Numeric string, integer or float expected" => "Epäkelpo syöte. Pitäisi olla kokonaisluku tai liukuluku",
 
-    // Laminas_Validate_StringLength
+    // Laminas\Validator\StringLength
     "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
-    "'%value%' is less than %min% characters long" => "'%value%' on lyhyempi kuin vaaditut %min% merkkiä",
-    "'%value%' is more than %max% characters long" => "'%value%' on pidempi kuin sallitut %max% merkkiä",
+    "The input is less than %min% characters long" => "Syöte on lyhyempi kuin vaaditut %min% merkkiä",
+    "The input is more than %max% characters long" => "Syöte on pidempi kuin sallitut %max% merkkiä",
+
+    // Laminas\Validator\Timezone
+    "Invalid timezone given." => "Annettu aikavyöhyke ei ole kelvollinen.",
+    "Invalid timezone location given." => "Annettu aikavyöhykkeen sijainti ei ole kelvollinen.",
+    "Invalid timezone abbreviation given." => "Annettu aikavyöhykkeen lyhenne ei ole kelvollinen.",
+
+    // Laminas\Validator\Uri
+    "Invalid type given. String expected" => "Epäkelpo syöte. Pitäisi olla merkkijono",
+    "The input does not appear to be a valid Uri" => "Syöte ei ole kelvollinen Uri",
 ];
