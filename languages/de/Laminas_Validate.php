@@ -92,7 +92,7 @@ return [
     "The input is not a valid email address. Use the basic format local-part@hostname" => "Die Eingabe ist keine gültige E-Mail-Adresse. Benutzen Sie folgendes Format: dein-name@anbieter",
     "'%hostname%' is not a valid hostname for the email address" => "'%hostname%' ist kein gültiger Hostname für die E-Mail-Adresse",
     "'%hostname%' does not appear to have a valid MX record for the email address '%value%'" => "'%hostname%' scheint keinen gültigen MX Eintrag für die E-Mail-Adresse '%value%' zu haben",
-    "'%hostname%' is not in a routable network segment. The email address  should not be resolved from public network" => "'%hostname%' ist in keinem routebaren Netzwerksegment. Die E-Mail-Adresse sollte nicht vom öffentlichen Netz aus aufgelöst werden",
+    "'%hostname%' is not in a routable network segment. The email address should not be resolved from public network" => "'%hostname%' ist in keinem routebaren Netzwerksegment. Die E-Mail-Adresse sollte nicht vom öffentlichen Netz aus aufgelöst werden",
     "'%localPart%' can not be matched against dot-atom format" => "'%localPart%' passt nicht auf das dot-atom Format",
     "'%localPart%' can not be matched against quoted-string format" => "'%localPart%' passt nicht auf das quoted-string Format",
     "'%localPart%' is not a valid local part for the email address" => "'%localPart%' ist kein gültiger lokaler Teil für die E-Mail-Adresse",
