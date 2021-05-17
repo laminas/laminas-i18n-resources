@@ -1,34 +1,28 @@
 {
     "name": "laminas/laminas-i18n-resources",
     "description": "Provides validator and captcha translations for laminas-i18n's Translator",
-    "license": "BSD-3-Clause",
     "keywords": [
         "laminas",
         "resources",
         "translations"
     ],
     "homepage": "https://laminas.dev",
-    "support": {
-        "docs": "https://docs.laminas.dev/laminas-i18n-resources/",
-        "issues": "https://github.com/laminas/laminas-i18n-resources/issues",
-        "source": "https://github.com/laminas/laminas-i18n-resources",
-        "rss": "https://github.com/laminas/laminas-i18n-resources/releases.atom",
-        "chat": "https://laminas.dev/chat",
-        "forum": "https://discourse.laminas.dev"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-    },
+    "license": "BSD-3-Clause",
     "require": {
         "php": "^7.3 || ~8.0.0",
         "laminas/laminas-zendframework-bridge": "^1.0"
+    },
+    "replace": {
+        "zendframework/zend-i18n-resources": "^2.6.1"
     },
     "require-dev": {
         "laminas/laminas-coding-standard": "~1.0.0",
         "phpunit/phpunit": "^9.5"
     },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {},
     "autoload": {
         "classmap": [
             "src/Resources.php"
@@ -49,7 +43,12 @@
         "test": "phpunit --colors=always",
         "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
     },
-    "replace": {
-        "zendframework/zend-i18n-resources": "^2.6.1"
+    "support": {
+        "issues": "https://github.com/laminas/laminas-i18n-resources/issues",
+        "forum": "https://discourse.laminas.dev",
+        "chat": "https://laminas.dev/chat",
+        "source": "https://github.com/laminas/laminas-i18n-resources",
+        "docs": "https://docs.laminas.dev/laminas-i18n-resources/",
+        "rss": "https://github.com/laminas/laminas-i18n-resources/releases.atom"
     }
 }
