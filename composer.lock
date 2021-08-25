@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f83f5e891e00b731ba8b021341ad6bf9",
+    "content-hash": "d6bb4b10f115a2a5aa5b4ef6b2fd2239",
     "packages": [
         {
             "name": "laminas/laminas-zendframework-bridge",
@@ -2293,8 +2293,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.3 || ~8.0.0"
+        "php": "^7.3 || ~8.0.0 || ~8.1.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
