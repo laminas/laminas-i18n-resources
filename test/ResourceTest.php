@@ -9,21 +9,21 @@ use PHPUnit\Framework\TestCase;
 
 class ResourceTest extends TestCase
 {
-    public function testBasePath()
+    public function testBasePath(): void
     {
         $path = Resources::getBasePath();
 
         $this->assertDirectoryExists($path);
     }
 
-    public function testCaptchaPattern()
+    public function testCaptchaPattern(): void
     {
         $pattern = Resources::getPatternForCaptcha();
 
         $this->assertSame('%s/Laminas_Captcha.php', $pattern);
     }
 
-    public function testValidatorPattern()
+    public function testValidatorPattern(): void
     {
         $pattern = Resources::getPatternForValidator();
 
