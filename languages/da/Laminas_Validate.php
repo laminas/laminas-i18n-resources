@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * DA-Revision: 15.Oct.2015
  */
-
 return [
     // Laminas\Authentication\Validator\Authentication
     "Invalid identity" => "Ugyldig bruger",
@@ -145,8 +146,8 @@ return [
     "Minimum expected height for image should be '%minheight%' but '%height%' detected" => "Den mindste højde for billeder er '%minheight%', men dette billede er '%height%'",
     "The size of image could not be detected" => "Størrelsen på billedet kunne ikke findes",
     "File is not readable or does not exist" => "Filen kan ikke læses eller eksisterer ikke",
-    // Laminas\Validator\File\IsCompressed
 
+    // Laminas\Validator\File\IsCompressed
     "File is not compressed, '%type%' detected" => "Filen er ikke komprimeret, '%type%' fundet",
     "The mimetype could not be detected from the file" => "Mime-typen kunne ikke læses fra filen",
     "File is not readable or does not exist" => "Filen kan ikke læses eller eksisterer ikke",
@@ -225,7 +226,6 @@ return [
     "The input does not appear to be a valid local network name" => "Indtastningen ligner ikke et gyldigt navn på et lokalt netværk",
     "The input does not appear to be a valid URI hostname" => "Indtastningen ligner ikke et gyldigt URI-hostnavn",
     "The input appears to be an IP address, but IP addresses are not allowed" => "Indtastningen ligner en IP-adresse, men IP-adresser er ikke tilladt",
-
     "The input appears to be a local network name but local network names are not allowed" => "Indtastningen ligner navnet på et lokalt netværk, hvilket ikke er tilladt",
     "The input appears to be a DNS hostname but cannot extract TLD part" => "Indtastningen ligner et DNS hostnavn, men der mangler et TLD",
     "The input appears to be a DNS hostname but cannot match TLD against known list" => "Indtastningen ligner et DNS hostnavn, men TLD genkendes ikke",
