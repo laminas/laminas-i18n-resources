@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * ZH-Revision: 26.Apr.2013
  */

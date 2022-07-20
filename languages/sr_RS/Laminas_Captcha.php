@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * sr_RS-Revision: 28.October.2015
  */
