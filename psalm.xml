@@ -10,6 +10,7 @@
     <projectFiles>
         <directory name="src"/>
         <directory name="test"/>
+        <directory name="languages"/>
         <ignoreFiles>
             <directory name="vendor"/>
         </ignoreFiles>
@@ -27,6 +28,11 @@
                 <referencedMethod name="PHPUnit\Framework\MockObject\Builder\InvocationMocker::with"/>
             </errorLevel>
         </InternalMethod>
+        <DuplicateArrayKey>
+            <errorLevel type="suppress">
+                <directory name="languages" />
+            </errorLevel>
+        </DuplicateArrayKey>
     </issueHandlers>
     <plugins>
         <pluginClass class="Psalm\PhpUnitPlugin\Plugin"/>
