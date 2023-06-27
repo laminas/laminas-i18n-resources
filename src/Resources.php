@@ -11,6 +11,8 @@ final class Resources
 {
     /**
      * Non-instantiable.
+     *
+     * @psalm-suppress UnusedConstructor
      */
     private function __construct()
     {
