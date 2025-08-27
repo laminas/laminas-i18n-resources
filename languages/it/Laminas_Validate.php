@@ -248,6 +248,13 @@ return [
     "Value is required and can't be empty" => "Il dato è richiesto e non può essere vuoto",
     "Invalid type given. String, integer, float, boolean or array expected" => "Tipo di dato non valido. Era atteso un dato di tipo string, integer, float, boolean o array",
 
+    // Laminas\Validator\NumberComparison
+    "Expected a numeric value" => "È richiesto un valore numerico",
+    "Values must be greater than or equal to %min%. Received \"%value%\"" => "È richiesto un valore più grande o uguale a %min%. Ricevuto \"%value%\"",
+    "Values must be greater than %min%. Received \"%value%\"" => "È richiesto un valore più grande di %min%. Ricevuto \"%value%\"",
+    "Values must be less than or equal to %max%. Received \"%value%\"" => "È richiesto un valore più piccolo o uguale a %max%. Ricevuto \"%value%\"",
+    "Values must be less than %max%. Received \"%value%\"" => "È richiesto un valore più piccolo di %max%. Ricevuto \"%value%\"",
+
     // Laminas\Validator\Regex
     "Invalid type given. String, integer or float expected" => "Tipo di dato non valido. Era atteso un dato di tipo string, float o integer",
     "The input does not match against pattern '%pattern%'" => "L'input non corrisponde al pattern '%pattern%'",
