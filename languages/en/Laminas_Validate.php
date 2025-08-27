@@ -262,6 +262,13 @@ return [
     "Value is required and can't be empty" => "Value is required and can't be empty",
     "Invalid type given. String, integer, float, boolean or array expected" => "Invalid type given. String, integer, float, boolean or array expected",
 
+    // Laminas\Validator\NumberComparison
+    "Expected a numeric value" => "Expected a numeric value",
+    "Values must be greater than or equal to %min%. Received \"%value%\"" => "Values must be greater than or equal to %min%. Received \"%value%\"",
+    "Values must be greater than %min%. Received \"%value%\"" => "Values must be greater than %min%. Received \"%value%\"",
+    "Values must be less than or equal to %max%. Received \"%value%\"" => "Values must be less than or equal to %max%. Received \"%value%\"",
+    "Values must be less than %max%. Received \"%value%\"" => "Values must be less than %max%. Received \"%value%\"",
+
     // Laminas\Validator\Regex
     "Invalid type given. String, integer or float expected" => "Invalid type given. String, integer or float expected",
     "The input does not match against pattern '%pattern%'" => "The input does not match against pattern '%pattern%'",
