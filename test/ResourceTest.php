@@ -7,7 +7,7 @@ namespace LaminasTest\I18n\Translator;
 use Laminas\I18n\Translator\Resources;
 use PHPUnit\Framework\TestCase;
 
-class ResourceTest extends TestCase
+final class ResourceTest extends TestCase
 {
     public function testBasePath(): void
     {
