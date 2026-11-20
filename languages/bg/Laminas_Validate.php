@@ -275,7 +275,7 @@ return [
 
     // Laminas\Validator\StringLength
     "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
-    "The input is less than %min% characters long" => "Въведената стойност е по-малкa от %min% символа",
+    "The input is less than %min% characters long" => "Въведената стойност е по-малка от %min% символа",
     "The input is more than %max% characters long" => "Въведената стойност е по-голяма от %max% символа",
 
     // Laminas\Validator\Uri
