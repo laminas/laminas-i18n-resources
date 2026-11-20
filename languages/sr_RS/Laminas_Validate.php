@@ -149,12 +149,12 @@ return [
 
     // Laminas\Validator\File\IsCompressed
     "File is not compressed, '%type%' detected" => "Фајл није компресован, '%type%' детектован",
-    "The mimetype could not be detected from the file" => "Мimеtype фајла не може бити детектован",
+    "The mimetype could not be detected from the file" => "Mimetype фајла не може бити детектован",
     "File is not readable or does not exist" => "Фајл не може бити прочитан или не постоји",
 
     // Laminas\Validator\File\IsImage
     "File is no image, '%type%' detected" => "Фајл није слика, '%type%' детектован",
-    "The mimetype could not be detected from the file" => "Мimеtype фајла не може бити детектован",
+    "The mimetype could not be detected from the file" => "Mimetype фајла не може бити детектован",
     "File is not readable or does not exist" => "Фајл не може бити прочитан или не постоји",
 
     // Laminas\Validator\File\Md5
@@ -164,7 +164,7 @@ return [
 
     // Laminas\Validator\File\MimeType
     "File has an incorrect mimetype of '%type%'" => "Фајл има нетачан mimetype '%type%'",
-    "The mimetype could not be detected from the file" => "Мimеtype фајла не може бити детектован",
+    "The mimetype could not be detected from the file" => "Mimetype фајла не може бити детектован",
     "File is not readable or does not exist" => "Фајл не може бити прочитан или не постоји",
 
     // Laminas\Validator\File\NotExists
