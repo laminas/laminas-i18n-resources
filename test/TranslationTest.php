@@ -24,10 +24,16 @@ final class TranslationTest extends TestCase
     {
         $invalid = [];
 
-        foreach (glob(Resources::getBasePath() . '/*/*.php') as $file) {
+        $files = glob(Resources::getBasePath() . '/*/*.php');
+        self::assertIsArray($files);
+
+        foreach ($files as $file) {
             $language = basename(dirname($file));
 
-            /** @var array<string, string> $messages */
+            /**
+             * @psalm-suppress UnresolvableInclude
+             * @var array<array-key, string|array<array-key, string>> $messages
+             */
             $messages = require $file;
 
             foreach ($messages as $message) {
@@ -35,10 +41,13 @@ final class TranslationTest extends TestCase
                     continue;
                 }
 
-                foreach (preg_split('/[^\p{L}]+/u', $message, -1, PREG_SPLIT_NO_EMPTY) as $word) {
-                    $alphabets = preg_match('/\p{sc=Latin}/u', $word)
-                        + preg_match('/\p{sc=Cyrillic}/u', $word)
-                        + preg_match('/\p{sc=Greek}/u', $word);
+                $words = preg_split('/[^\p{L}]+/u', $message, -1, PREG_SPLIT_NO_EMPTY);
+                self::assertIsArray($words);
+
+                foreach ($words as $word) {
+                    $alphabets = (preg_match('/\p{Latin}/u', $word) === 1 ? 1 : 0)
+                        + (preg_match('/\p{Cyrillic}/u', $word) === 1 ? 1 : 0)
+                        + (preg_match('/\p{Greek}/u', $word) === 1 ? 1 : 0);
 
                     if ($alphabets > 1) {
                         $invalid[] = $language . ': ' . $word;
